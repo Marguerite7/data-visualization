@@ -126,14 +126,14 @@
           <!-- <label for="year-movie" class="form-label">Year</label>
           <input type="range" class="form-range" min="1920" max="2021" step="20" id="year-movie"> -->
           <!-- <b>1920</b> <input id="year-movie" type="text" class="slider" value="" data-slider-min="1920" data-slider-max="2020" data-slider-step="5" data-slider-value="[1990,2020]"/> <b>2020</b> -->
-          <input type="range" min="1920" max="2020" value="2020" class="slider" id="year-movie">
+          <!-- <input type="range" min="1920" max="2020" value="2020" class="slider" id="year-movie"> -->
       </div>
 
       <div id = "filter" class = "duration slidecontainer">
         <h4>Duration</h4>
           <!-- <label for="duration-movie" class="form-label">Duration (min)</label>
           <input type="range" class="form-range" min="0" max="180" step="20" id="duration-movie"> -->
-          <input type="range" min="0" max="180" value="120" class="slider" id="duration-movie">
+          <!-- <input type="range" min="0" max="180" value="120" class="slider" id="duration-movie"> -->
         </div>
 
     </nav>
@@ -281,21 +281,21 @@
         $('#canvas').toggleClass('active');
     });
 
-    var slider = document.getElementById("year-movie");
-    var output = document.getElementById("demo");
-    output.innerHTML = slider.value; // Display the default slider value
-    // Update the current slider value (each time you drag the slider handle)
-    slider.oninput = function() {
-      output.innerHTML = this.value;
-    }
+    // var slider = document.getElementById("year-movie");
+    // var output = document.getElementById("demo");
+    // output.innerHTML = slider.value; // Display the default slider value
+    // // Update the current slider value (each time you drag the slider handle)
+    // slider.oninput = function() {
+    //   output.innerHTML = this.value;
+    // }
 
-    var slider = document.getElementById("duration-movie");
-    var output = document.getElementById("demo2");
-    output.innerHTML = slider.value; // Display the default slider value
-    // Update the current slider value (each time you drag the slider handle)
-    slider.oninput = function() {
-      output.innerHTML = this.value;
-    }
+    // var slider = document.getElementById("duration-movie");
+    // var output = document.getElementById("demo2");
+    // output.innerHTML = slider.value; // Display the default slider value
+    // // Update the current slider value (each time you drag the slider handle)
+    // slider.oninput = function() {
+    //   output.innerHTML = this.value;
+    // }
 
     // var slider = new Slider('#year-movie', {});
 
@@ -307,7 +307,7 @@
     //     $('#Africa').toggleClass('checked');
     // });
 
-    // });
+    });
 
 
   </script>
