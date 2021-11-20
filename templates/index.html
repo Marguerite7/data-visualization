@@ -8,7 +8,8 @@
   <!-- Bootstrap CSS -->
   <!-- <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT" crossorigin="anonymous"> -->
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/pulse/bootstrap.min.css" rel="stylesheet" integrity="sha384-FnujoHKLiA0lyWE/5kNhcd8lfMILbUAZFAT89u11OhZI7Gt135tk3bGYVBC2xmJ5" crossorigin="anonymous">
-
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/d3js/3.5.17/d3.min.js"></script> -->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,30 +23,137 @@
   <link rel="stylesheet" href="/static/main.css">
 </head>
 <body>
-  <div class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
-    <ul class="navbar-nav d-flex w-50 mr-auto">
-      <li class="nav-item">
-        <a href="/netview/" class="navbar-brand">Simple Network Viewer</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" role="button" data-toggle="modal" data-target="#aboutModal" id="show-about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="modal" data-target="#helpModal" id="show-help">Help</a>
-      </li>
-    </ul>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse w-100" id="navbarResponsive">
-<!--       <ul class="navbar-nav w-100 justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link small" href="http://hyunwoopark.com" target="_blank">© Hyunwoo Park</a>
-        </li>
-      </ul> -->
+
+
+
+  <div class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #c30000;">
+
+      <!-- Page Header-->
+    <div class="header nav-item">
+      <font size = "+5" class="title" style="color:white;"> MovieGoer </font>
+    </div>
+
+    <div class="navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto w-100 justify-content-end">
         <li class="nav-item">
-          <!-- <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="On">Labels: On</a> -->
+          <a class="nav-link" href="#" role="button" data-toggle="modal" data-target="#aboutModal" id="show-about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#helpModal" id="show-help">Help</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <center>
+          <h2>Global search</h2>
+        </center>  
+      </div>
+      <div id = "filter" class = "worldwide">
+        <h4>Worldwide</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Africa">
+          <label class="form-check-label" for="Africa">
+            Africa
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Asia">
+          <label class="form-check-label" for="Asia">
+            Asia
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Europe">
+          <label class="form-check-label" for="Europe">
+            Europe
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="NA">
+          <label class="form-check-label" for="NA">
+            North America
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="SA">
+          <label class="form-check-label" for="SA">
+            South America
+          </label>
+        </div>
+      </div>
+
+      <div id = "filter" class = "streaming">
+        <h4>Streaming Service</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="AP">
+          <label class="form-check-label" for="Africa">
+            Amazon Prime
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="D+">
+          <label class="form-check-label" for="Asia">
+            Disney +
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="HBO">
+          <label class="form-check-label" for="Europe">
+            HBO
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Netflix">
+          <label class="form-check-label" for="NA">
+            Netflix
+          </label>
+        </div>
+      </div>
+      <div class="form-check reset">
+        <input class="form-check-input" type="checkbox" value="" id="reset">
+        <label class="form-check-label" for="reset">
+          Reset  all
+        </label>
+      </div>
+
+      <div id = "filter" class = "year slidecontainer">
+        <h4>Year of release</h4>
+          <!-- <label for="year-movie" class="form-label">Year</label>
+          <input type="range" class="form-range" min="1920" max="2021" step="20" id="year-movie"> -->
+          <!-- <b>1920</b> <input id="year-movie" type="text" class="slider" value="" data-slider-min="1920" data-slider-max="2020" data-slider-step="5" data-slider-value="[1990,2020]"/> <b>2020</b> -->
+          <input type="range" min="1920" max="2020" value="2020" class="slider" id="year-movie">
+      </div>
+
+      <div id = "filter" class = "duration slidecontainer">
+        <h4>Duration</h4>
+          <!-- <label for="duration-movie" class="form-label">Duration (min)</label>
+          <input type="range" class="form-range" min="0" max="180" step="20" id="duration-movie"> -->
+          <input type="range" min="0" max="180" value="120" class="slider" id="duration-movie">
+        </div>
+
+    </nav>
+
+    <div id="searchbox">
+      <div class="searchbox-header">
+        <center>
+          <h2>Movie search</h2>
+        </center>
+      </div>
+      <form class="form-inline"  size=’5′>
+        <input class="form-control form-control-lg" type="search" placeholder="Movie name" aria-label="Quick Search" id="quick-search">
+      </form>
+      <div class="searchbox-header">
+        <center>
+          <h2>Display parameters</h2>
+        </center>
+      </div>
+      <ul  class="list-unstyled components">
+        <li class="nav-item">
           <a class="nav-link nav-toggle" href="#" id="toggle-text">Labels: On</a>
         </li>
         <li class="nav-item">
@@ -54,16 +162,24 @@
         <li class="nav-item">
           <a class="nav-link nav-toggle" href="#" id="toggle-tooltip">Tooltip: On</a>
         </li>
-        <form class="form-inline ml-2">
-          <input class="form-control" type="search" placeholder="Quick Search" aria-label="Quick Search" id="quick-search">
-        </form>
       </ul>
     </div>
+
+     <!-- Page Content -->
+    <div id="content">
+      <div id="canvas"></div>
+      <div id="spinner"><span>loading</span></div>
+      <pre id="tooltip" class="d-none"></pre>
+      <button type="button" id="sidebarCollapse" class="btn btn-info">
+        <span>Full screen</span>
+      </button>
+      <!-- <form class="form-inline ml-2"  size=’5′>
+        <input class="form-control form-control-lg" type="search" placeholder="Movie name" aria-label="Quick Search" id="quick-search">
+      </form> -->
+    </div>
+
   </div>
 
-  <div id="canvas"></div>
-  <div id="spinner"><span>loading</span></div>
-  <pre id="tooltip" class="d-none"></pre>
 
   <!-- About Modal -->
   <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalTitle" aria-hidden="true">
@@ -76,29 +192,19 @@
           </button>
         </div>
         <div class="modal-body">
-          <h5>Developed by <a href="https://hyunwoopark.com" target="_blank">Hyunwoo Park</a>.</h5>
+          <h5>Developed by BUISSON Antoine, DORET Norman, SHETTY Marguerite Indrayani & SUARD Steve. </h5>
           <p>This web app aims to provide a minimalistic simple interface to visualize a network.</p>
           <p>Last updated: <span id="last-updated"></span></p>
-          <ul>
-            <li>Made with</li>
+          Made with
             <ul>
               <li><a href="https://d3js.org/" target="_blank">d3.js v5</a></li>
               <li><a href="https://jquery.com/" target="_blank">jQuery v.3.4.1</a></li>
               <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap v4.4.1</a></li>
               <li><a href="https://bootswatch.com/" target="_blank">Bootswatch v4.4.1</a></li>
             </ul>
-            <li>See also</li>
-            <ul>
-              <li><a href="http://visualscm.herokuapp.com/" target="_blank">Visual SCM</a></li>
-              <li><a href="http://bicentric.herokuapp.com/" target="_blank">Bicentric Diagrams</a></li>
-              <li><a href="https://ecoxight.com/" target="_blank">ecoxight</a><span class="badge badge-secondary align-middle">Closed Beta</span></li>
-              <li><a href="https://ecoxight.com/pulse" target="_blank">pulse</a><span class="badge badge-secondary align-middle">Closed Beta</span></li>
-            </ul>
-          </ul>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
@@ -158,7 +264,54 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- Main JS -->
   <script src="/static/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $('#sidebarCollapse').toggleClass('active');
+        $('#searchbox').toggleClass('active');
+        $('#canvas').toggleClass('active');
+    });
+
+    var slider = document.getElementById("year-movie");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value; // Display the default slider value
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+
+    var slider = document.getElementById("duration-movie");
+    var output = document.getElementById("demo2");
+    output.innerHTML = slider.value; // Display the default slider value
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+
+    // var slider = new Slider('#year-movie', {});
+
+    // });
+
+    // $(document).ready(function () {
+
+    // $('#Africa').on('click', function () {
+    //     $('#Africa').toggleClass('checked');
+    // });
+
+    // });
+
+
+  </script>
+
 </body>
 
 </html>
