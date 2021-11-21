@@ -17,7 +17,7 @@
 
 // global variables
 // [svg, svgNodes, svgLinks, svgTexts, width, height, color, nodes, links, force, node, link, text, zoom, drag, graph] = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc20, getTransform, graph, height, hideDetails, init, initUI, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, selected, setHighlightByNode, setHighlightByStr, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, url2, width, zoom;
+var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc20, getTransform, graph, height, hideDetails, init, initUI, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, selected, setHighlightByNode, setHighlight_Africa, setHighlightByStr, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, url2, width, zoom;
 
 svg = null;
 
@@ -61,9 +61,7 @@ nborsdic = null;
 
 gc20 = '#3366cc #dc3912 #ff9900 #109618 #990099 #0099c6 #dd4477 #66aa00 #b82e2e #316395 #994499 #22aa99 #aaaa11 #6633cc #e67300 #8b0707 #651067 #329262 #5574a6 #3b3eac'.split(' ');
 
-url = location.search.substr(1, 24) === "https://www.dropbox.com/" ? location.search.substr(1).replace('www.dropbox.com', 'dl.dropboxusercontent.com') : "https://dl.dropboxusercontent.com/s/vn98nq1g5fn6dkk/miserable.json?dl=0";
-
-url2 = '/api';
+url = '/api';
 
 // initialize ui
 init = function() {
@@ -80,7 +78,7 @@ init = function() {
   $('#spinner').show();
   d3.json(url).then(function(data) {
     graph = data;
-    // console.log graph
+    // console.log(graph.nodes[0]['year']);
     nborsdic = {};
     $.map(graph.nodes, function(v) {
       nborsdic[v.id] = [];
@@ -258,7 +256,7 @@ nodeColor = function(d) {
 showDetails = function(d) {
   var tt;
   tt = $('#tooltip');
-  tt.html(JSON.stringify(d, ['id', 'label', 'group', 'color', 'size', 'source', 'target', 'value'], 2));
+  tt.html(JSON.stringify(d, ['id', 'label', 'group', 'color', 'size', 'source', 'target', 'value', 'year', 'duration', 'plateform', 'country', 'link'], 2));
   // tt.html JSON.stringify(d, null, 2)
   if (d.hasOwnProperty('x')) {
     tt.css('left', 10 + d.x);
@@ -357,6 +355,20 @@ isEdgeSelected = function() {
   return selected && selected.hasOwnProperty('source');
 };
 
+var Af = document.getElementById("Africa");
+
+Af.onchange = function () {
+  if (this.checked == true) {
+    node.data(graph.nodes, function(d) {
+      if (d.country == "Africa") {
+        setHighlight_Africa(d)
+      }
+    })
+  }else {
+    exitHighlight();
+  }
+}
+
 setHighlightByNode = function(d, hover) {
   if (link !== null) {
     if (!dragging) {
@@ -379,6 +391,26 @@ setHighlightByNode = function(d, hover) {
   }
 };
 
+setHighlight_Africa = function(d) {
+  if (link !== null) {
+    link.classed('dim', function(p) {
+      return p.country != "Africa" && !isEdgeOf(p, d);
+    }).classed('d-none', function(p) {
+      return !isLinkOn() && p.country != "Africa";
+    });
+    // .classed 'selected', (p) -> isEdgeSelected() and isSameEdge p,selected
+    node.classed('dim', function(p) {
+      return p.country != "Africa";
+    });
+    // .classed 'selected', (p) -> isNodeSelected() and isSameNode p,selected
+    text.classed('dim', function(p) {
+      return p.country != "Africa";
+    }).classed('d-none', function(p) {
+      return !isTextOn() && p.country != "Africa";
+    });
+  }
+};
+
 // setHighlightByEdge = (d, hover) ->
 //   if link!=null
 //     if not dragging
@@ -393,6 +425,7 @@ setHighlightByNode = function(d, hover) {
 //         .classed 'dim', (p) -> not isEdgeOf d,p
 //         .classed 'd-none', (p) -> not isTextOn() and not isEdgeOf d,p
 //   return
+
 setHighlightByStr = function(s) {
   // console.log s.toLowerCase()
   if (link !== null) {
@@ -420,6 +453,7 @@ exitHighlight = function() {
           setHighlightByEdge(selected, false);
         } else {
           setHighlightByNode(selected, false);
+          setHighlight_Africa(selected)
         }
       } else {
         if ($('#quick-search').val().length > 0) {

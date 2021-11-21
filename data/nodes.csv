@@ -1,78 +1,78 @@
-id,group
-myriel,1
-napoleon,1
-mlle.baptistine,1
-mme.magloire,1
-countessdelo,1
-geborand,1
-champtercier,1
-cravatte,1
-count,1
-oldman,1
-labarre,2
-valjean,2
-marguerite,3
-mme.der,2
-isabeau,2
-gervais,2
-tholomyes,3
-listolier,3
-fameuil,3
-blacheville,3
-favourite,3
-dahlia,3
-zephine,3
-fantine,3
-mme.thenardier,4
-thenardier,4
-cosette,5
-javert,4
-fauchelevent,0
-bamatabois,2
-perpetue,3
-simplice,2
-scaufflaire,2
-woman1,2
-judge,2
-champmathieu,2
-brevet,2
-chenildieu,2
-cochepaille,2
-pontmercy,4
-boulatruelle,6
-eponine,4
-anzelma,4
-woman2,5
-motherinnocent,0
-gribier,0
-jondrette,7
-mme.burgon,7
-gavroche,8
-gillenormand,5
-magnon,5
-mlle.gillenormand,5
-mme.pontmercy,5
-mlle.vaubois,5
-lt.gillenormand,5
-marius,8
-baronesst,5
-mabeuf,8
-enjolras,8
-combeferre,8
-prouvaire,8
-feuilly,8
-courfeyrac,8
-bahorel,8
-bossuet,8
-joly,8
-grantaire,8
-motherplutarch,9
-gueulemer,4
-babet,4
-claquesous,4
-montparnasse,4
-toussaint,5
-child1,10
-child2,10
-brujon,4
-mme.hucheloup,8
+id,group,year,duration,plateform,country,link,size
+myriel,1,1981,68,HBO,Europe,http://,6
+napoleon,1,2003,87,Netflix,Africa,http://,8
+mlle.baptistine,1,2011,167,Netflix,South America,http://,13
+mme.magloire,1,2001,131,HBO,Europe,http://,15
+countessdelo,1,1993,67,Disney +,South America,http://,12
+geborand,1,1978,78,HBO,Asia,http://,19
+champtercier,1,1981,168,Netflix,Europe,http://,3
+cravatte,1,1982,78,Amazon Prime,Europe,http://,3
+count,1,1979,110,Amazon Prime,Africa,http://,5
+oldman,1,2018,83,Disney +,Europe,http://,6
+labarre,2,2008,116,HBO,South America,http://,6
+valjean,2,1991,88,Disney +,Europe,http://,6
+marguerite,3,2001,122,HBO,Africa,http://,6
+mme.der,2,1976,103,Amazon Prime,South America,http://,6
+isabeau,2,1979,157,Netflix,South America,http://,6
+gervais,2,1997,171,Disney +,North America,http://,6
+tholomyes,3,2003,110,HBO,North America,http://,6
+listolier,3,1988,115,Disney +,North America,http://,6
+fameuil,3,1996,166,Netflix,North America,http://,6
+blacheville,3,2005,91,Amazon Prime,Asia,http://,6
+favourite,3,1989,99,Disney +,North America,http://,6
+dahlia,3,1987,149,Netflix,Africa,http://,6
+zephine,3,1986,169,HBO,Africa,http://,6
+fantine,3,1998,84,Disney +,North America,http://,6
+mme.thenardier,4,1992,136,HBO,Africa,http://,6
+thenardier,4,1984,146,HBO,Africa,http://,6
+cosette,5,1989,91,Amazon Prime,Africa,http://,6
+javert,4,1991,180,HBO,Europe,http://,6
+fauchelevent,0,2012,157,Disney +,North America,http://,6
+bamatabois,2,1989,157,Amazon Prime,Africa,http://,6
+perpetue,3,1981,82,Disney +,North America,http://,6
+simplice,2,1986,91,HBO,South America,http://,6
+scaufflaire,2,1998,61,Netflix,North America,http://,6
+woman1,2,1976,115,Netflix,South America,http://,6
+judge,2,1996,177,Disney +,South America,http://,6
+champmathieu,2,1980,136,Netflix,Europe,http://,6
+brevet,2,1979,133,Netflix,South America,http://,6
+chenildieu,2,2015,176,Amazon Prime,North America,http://,6
+cochepaille,2,1995,118,Netflix,Europe,http://,6
+pontmercy,4,2006,76,Netflix,Africa,http://,6
+boulatruelle,6,1977,67,Amazon Prime,Asia,http://,6
+eponine,4,1991,139,Amazon Prime,Africa,http://,6
+anzelma,4,1987,118,HBO,South America,http://,6
+woman2,5,2015,109,Disney +,Asia,http://,6
+motherinnocent,0,2018,112,HBO,Asia,http://,6
+gribier,0,1992,100,Netflix,Europe,http://,6
+jondrette,7,2008,118,Disney +,South America,http://,6
+mme.burgon,7,1986,81,HBO,Africa,http://,6
+gavroche,8,1976,118,Amazon Prime,Asia,http://,6
+gillenormand,5,1992,135,Disney +,North America,http://,6
+magnon,5,1987,141,HBO,Asia,http://,6
+mlle.gillenormand,5,2008,167,Disney +,South America,http://,6
+mme.pontmercy,5,1992,145,Amazon Prime,South America,http://,6
+mlle.vaubois,5,1997,86,HBO,North America,http://,6
+lt.gillenormand,5,1986,155,Disney +,North America,http://,6
+marius,8,2012,126,Disney +,North America,http://,6
+baronesst,5,2005,155,Disney +,North America,http://,6
+mabeuf,8,2010,74,Disney +,South America,http://,6
+enjolras,8,1976,81,Disney +,Africa,http://,6
+combeferre,8,2011,156,Netflix,Asia,http://,6
+prouvaire,8,1989,88,Disney +,Africa,http://,6
+feuilly,8,1977,170,Disney +,South America,http://,6
+courfeyrac,8,2001,109,Netflix,Europe,http://,6
+bahorel,8,1984,116,Disney +,South America,http://,6
+bossuet,8,1998,118,Netflix,Asia,http://,6
+joly,8,1984,125,Amazon Prime,Europe,http://,6
+grantaire,8,1999,101,Netflix,South America,http://,6
+motherplutarch,9,2017,165,Disney +,Europe,http://,6
+gueulemer,4,1995,113,Amazon Prime,North America,http://,6
+babet,4,1990,75,HBO,North America,http://,6
+claquesous,4,1979,95,HBO,Asia,http://,6
+montparnasse,4,1985,175,Amazon Prime,South America,http://,6
+toussaint,5,1982,78,Disney +,Europe,http://,6
+child1,10,1993,73,Disney +,North America,http://,6
+child2,10,2012,173,HBO,North America,http://,6
+brujon,4,1982,145,HBO,North America,http://,6
+mme.hucheloup,8,2018,90,Disney +,Asia,http://,6
