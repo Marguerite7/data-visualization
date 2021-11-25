@@ -1,25 +1,24 @@
-id,group,year,label,duration,country,rating,link
-tt4191054,16,2015,Strange Magic,99,North America,58,https://image.tmdb.org/t/p/original/vjCdrK8gGRFnyuZb1j9BzgN2RaY.jpg
-tt1245537,99,2008,Stonehenge Decoded: Secrets Revealed,92,Others,64,https://image.tmdb.org/t/p/original/vOuBjv2ISNFPl7ZAz0Eu5hC9nLd.jpg
-tt0348124,16,2003,Stitch! The Movie,60,North America,62,https://image.tmdb.org/t/p/original/Apq6rZlmKnWIsctO8PkUvLFEJYq.jpg
-tt0250754,35,2000,Stepsister from Planet Weird,85,Others,59,https://image.tmdb.org/t/p/original/pWqLLg85Ep2hfzQKfWxG1TgIl9s.jpg
-tt1579247,35,2010,Starstruck,81,North America,61,https://image.tmdb.org/t/p/original/1CgkCNF5fYAp9d5pDzp7BEnZD0b.jpg
-tt4858674,35,2020,Stargirl,107,North America,62,https://image.tmdb.org/t/p/original/gwsrtzSrr7G6xjxsa7IwaAMHpEF.jpg
-tt2527338,28,2019,Star Wars: The Rise of Skywalker,142,North America,65,https://image.tmdb.org/t/p/original/db32LaOibwEliAmSL2jjDF6oDdj.jpg
-tt2527336,28,2017,Star Wars: The Last Jedi,152,North America,69,https://image.tmdb.org/t/p/original/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg
-tt2488496,28,2015,Star Wars: The Force Awakens,136,North America,78,https://image.tmdb.org/t/p/original/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg
-tt1185834,16,2008,Star Wars: The Clone Wars,98,Asia,60,https://image.tmdb.org/t/p/original/ywRtBu88SLAkNxD0GFib6qsFkBK.jpg
-tt10951528,99,2019,Star Wars: Galaxy's Edge - Adventure Awaits,81,Others,53,https://image.tmdb.org/t/p/original/8YONsxklf7y2fnx8mOjNeWTgfPD.jpg
-tt0121766,28,2005,Star Wars: Episode III - Revenge of the Sith,140,North America,75,https://image.tmdb.org/t/p/original/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg
-tt0121765,28,2002,Star Wars: Episode II - Attack of the Clones,142,North America,65,https://image.tmdb.org/t/p/original/oZNPzxqM2s5DyVWab09NTQScDQt.jpg
-tt0120915,28,1999,Star Wars: Episode I - The Phantom Menace,136,North America,65,https://image.tmdb.org/t/p/original/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg
-tt14578676,6,2021,Star Wars Biomes,18,North America,66,https://image.tmdb.org/t/p/original/8I69ReO2IZtcpXnzZpKeswpPI33.jpg
-tt0076759,28,1977,Star Wars,121,North America,86,https://image.tmdb.org/t/p/original/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg
-tt0111271,12,1994,Squanto: A Warrior's Tale,102,North America,61,https://image.tmdb.org/t/p/original/mQNYWXfUK3cEvQAQQBtwXhdaPIl.jpg
-tt1792131,10751,2011,Spooky Buddies,88,North America,46,https://image.tmdb.org/t/p/original/iPXai8I7jnEZ4vbNLryV8K8bIOC.jpg
-tt0088161,35,1984,Splash,111,North America,63,
-tt12969826,10751,2021,Spin,93,North America,61,https://image.tmdb.org/t/p/original/iWAatef80X3zooIBQN0Y4tQCM1K.jpg
-tt1164647,12,2009,Space Buddies,84,North America,44,https://image.tmdb.org/t/p/original/zdfc6vrNQMttoaQvUbyYb6BvvGF.jpg
-tt2948372,16,2020,Soul,101,North America,81,https://image.tmdb.org/t/p/original/hm58Jw4Lw8OIeECIq5qyPYhAeRJ.jpg
-tt3778644,28,2018,Solo: A Star Wars Story,135,North America,69,https://image.tmdb.org/t/p/original/4oD6VEccFkorEBTEDXtpLAaz0Rl.jpg
-tt1068284,10751,2007,Snowglobe,120,North America,60,https://image.tmdb.org/t/p/original/8MCX4KlF8O3cdoSiX1jiUsyVXMp.jpg
+id,group,year,label,duration,plateform,country,rating,link
+tt4191054,16,2015,Strange Magic,99,['Disney +'],North America,58,https://image.tmdb.org/t/p/original/vjCdrK8gGRFnyuZb1j9BzgN2RaY.jpg
+tt1245537,99,2008,Stonehenge Decoded: Secrets Revealed,92,['Disney +'],Others,64,https://image.tmdb.org/t/p/original/vOuBjv2ISNFPl7ZAz0Eu5hC9nLd.jpg
+tt0348124,16,2003,Stitch! The Movie,60,['Disney +'],North America,62,https://image.tmdb.org/t/p/original/Apq6rZlmKnWIsctO8PkUvLFEJYq.jpg
+tt0250754,35,2000,Stepsister from Planet Weird,85,['Disney +'],Others,59,https://image.tmdb.org/t/p/original/pWqLLg85Ep2hfzQKfWxG1TgIl9s.jpg
+tt1579247,35,2010,Starstruck,81,['Disney +'],North America,61,https://image.tmdb.org/t/p/original/1CgkCNF5fYAp9d5pDzp7BEnZD0b.jpg
+tt4858674,35,2020,Stargirl,107,['Disney +'],North America,62,https://image.tmdb.org/t/p/original/gwsrtzSrr7G6xjxsa7IwaAMHpEF.jpg
+tt2527338,28,2019,Star Wars: The Rise of Skywalker,142,['Disney +'],North America,65,https://image.tmdb.org/t/p/original/db32LaOibwEliAmSL2jjDF6oDdj.jpg
+tt2527336,28,2017,Star Wars: The Last Jedi,152,['Disney +'],North America,69,https://image.tmdb.org/t/p/original/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg
+tt2488496,28,2015,Star Wars: The Force Awakens,136,['Disney +'],North America,78,https://image.tmdb.org/t/p/original/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg
+tt1185834,16,2008,Star Wars: The Clone Wars,98,['Disney +'],Asia,60,https://image.tmdb.org/t/p/original/ywRtBu88SLAkNxD0GFib6qsFkBK.jpg
+tt10951528,99,2019,Star Wars: Galaxy's Edge - Adventure Awaits,81,['Disney +'],Others,53,https://image.tmdb.org/t/p/original/8YONsxklf7y2fnx8mOjNeWTgfPD.jpg
+tt0121766,28,2005,Star Wars: Episode III - Revenge of the Sith,140,['Disney +'],North America,75,https://image.tmdb.org/t/p/original/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg
+tt0121765,28,2002,Star Wars: Episode II - Attack of the Clones,142,['Disney +'],North America,65,https://image.tmdb.org/t/p/original/oZNPzxqM2s5DyVWab09NTQScDQt.jpg
+tt0120915,28,1999,Star Wars: Episode I - The Phantom Menace,136,['Disney +'],North America,65,https://image.tmdb.org/t/p/original/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg
+tt14578676,6,2021,Star Wars Biomes,18,['Disney +'],North America,66,https://image.tmdb.org/t/p/original/8I69ReO2IZtcpXnzZpKeswpPI33.jpg
+tt0076759,28,1977,Star Wars,121,['Disney +'],North America,86,https://image.tmdb.org/t/p/original/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg
+tt0111271,12,1994,Squanto: A Warrior's Tale,102,['Disney +'],North America,61,https://image.tmdb.org/t/p/original/mQNYWXfUK3cEvQAQQBtwXhdaPIl.jpg
+tt1792131,10751,2011,Spooky Buddies,88,['Disney +'],North America,46,https://image.tmdb.org/t/p/original/iPXai8I7jnEZ4vbNLryV8K8bIOC.jpg
+tt12969826,10751,2021,Spin,93,['Disney +'],North America,61,https://image.tmdb.org/t/p/original/iWAatef80X3zooIBQN0Y4tQCM1K.jpg
+tt1164647,12,2009,Space Buddies,84,['Disney +'],North America,44,https://image.tmdb.org/t/p/original/zdfc6vrNQMttoaQvUbyYb6BvvGF.jpg
+tt2948372,16,2020,Soul,101,['Disney +'],North America,81,https://image.tmdb.org/t/p/original/hm58Jw4Lw8OIeECIq5qyPYhAeRJ.jpg
+tt3778644,28,2018,Solo: A Star Wars Story,135,['Disney +'],North America,69,https://image.tmdb.org/t/p/original/4oD6VEccFkorEBTEDXtpLAaz0Rl.jpg
+tt1068284,10751,2007,Snowglobe,120,['Disney +'],North America,60,https://image.tmdb.org/t/p/original/8MCX4KlF8O3cdoSiX1jiUsyVXMp.jpg
