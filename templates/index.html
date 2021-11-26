@@ -67,14 +67,14 @@
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="NA">
-          <label class="form-check-label" for="NA">
+          <input class="form-check-input" type="checkbox" value="" id="North America">
+          <label class="form-check-label" for="North America">
             North America
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="SA">
-          <label class="form-check-label" for="SA">
+          <input class="form-check-input" type="checkbox" value="" id="South America">
+          <label class="form-check-label" for="South America">
             South America
           </label>
         </div>
@@ -90,14 +90,14 @@
       <div id = "filter" class = "streaming">
         <h4>Streaming Service</h4>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="AP">
-          <label class="form-check-label" for="AP">
+          <input class="form-check-input" type="checkbox" value="" id="Amazon Prime">
+          <label class="form-check-label" for="Amazon Prime">
             Amazon Prime
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="D+">
-          <label class="form-check-label" for="D+">
+          <input class="form-check-input" type="checkbox" value="" id="Disney +">
+          <label class="form-check-label" for="Disney +">
             Disney +
           </label>
         </div>
@@ -107,10 +107,16 @@
             Netflix
           </label>
         </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="HBO">
+          <label class="form-check-label" for="HBO">
+            HBO
+          </label>
+        </div>
       </div>
 
       <div id = "filter" class = "year slidecontainer">
-          <h4>Year of release</h4>
+        <h4>Year of release</h4>
           <input type="text" id="year" style="border:0; color:white; font-weight:bold; background: #c30000">
           <div id="year-movie"></div>
       </div>
@@ -249,35 +255,35 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+  <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
-	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <!-- Popper.JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <!-- jQuery Custom Scroller CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-  <!-- Main JS -->
+  <!-- main JS -->
   <script src="/static/main.js"></script>
 
   <script>
     $(document).ready(function () {
-
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-        $('#sidebarCollapse').toggleClass('active');
-        $('#searchbox').toggleClass('active');
-        $('#canvas').toggleClass('active');
-    });
+      $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').toggleClass('active');
+          $('#sidebarCollapse').toggleClass('active');
+          $('#searchbox').toggleClass('active');
+          $('#canvas').toggleClass('active');
+      });
 
     $( "#year-movie" ).slider({
       range: true,
       min: 1980,
       max: 2021,
-      values: [ 2010, 2015 ],
+      values: [ 1980, 2021 ],
       slide: function( event, ui ) {
-      $( "#year" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+        yearSlider(ui);
+        $( "#year" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
       }
     });
       
@@ -288,9 +294,10 @@
       range: "min",
       min: 0,
       max: 180,
-      value: 120,
+      value: 180,
       slide: function( event, ui ) {
-      $( "#time" ).val( ui.value + " min");
+        durationSlider(ui);
+        $( "#time" ).val( ui.value + " min");
       }
     });
     
@@ -307,11 +314,9 @@
       }
     });
     
-    $( "#rate" ).val( $( "#rating-movie" ).slider( "value" ));
-  
- 
+    $( "#rate" ).val( $( "#rating-movie" ).slider( "value" )); 
 
-  });
+    });
 
   </script>
 

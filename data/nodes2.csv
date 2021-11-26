@@ -1,25 +1,401 @@
-Unnamed: 0,index,imdbID,tmdbID,imdbRating,imdbVoteCount,tmdbRating,originalTitle,genres,countries,year,runtime,cast,significants,title,overview,tagline,video,posterPath,poster_URLs_original,age,netflix,disney,prime,hbo,continent,id,group
-8686,254,tt4191054,302429,58,10770,71,Strange Magic,"[16, 12]",US,2015,99,"['Alan Cumming', 'Evan Rachel Wood', 'Elijah Kelley', 'Meredith Anne Bull', 'Sam Palladio', 'Kristin Chenoweth', 'Maya Rudolph']",['Gary Rydstrom'],Strange Magic,"A love potion works its devious charms on fairies, elves and the swamp-dwelling Bog King as they all try to possess the potion for themselves.",Everyone Deserves to be Loved.,3wv7Li2V7S8,/vjCdrK8gGRFnyuZb1j9BzgN2RaY.jpg,https://image.tmdb.org/t/p/original/vjCdrK8gGRFnyuZb1j9BzgN2RaY.jpg,3.0,False,True,False,False,North America,tt4191054,16
-8687,255,tt1245537,214167,64,215,68,Stonehenge Decoded: Secrets Revealed,"[99, 36]",__,2008,92,"['Donald Sutherland', 'Mike Parker Pearson']",['Christopher Spencer'],Stonehenge Decoded: Secrets Revealed,"Journey back 4,500 years to unlock the secrets of the world's most enduring archaeological mysteryâ€”Stonehenge. Stonehenge Decoded presents world-renowned archaeologists as they reveal a revolutionary new theory about who built Stonehenge and why. Thanks to a recent discovery of a lost city just two miles from the famous stone circle, our understanding of this era is now transformed.  Featuring dramatic recreations, groundbreaking new discoveries, and fascinating interviews, Stonehenge Decoded transports us back to an ancient time to shed new light on this mysterious monument in ways never before possible.",,,/vOuBjv2ISNFPl7ZAz0Eu5hC9nLd.jpg,https://image.tmdb.org/t/p/original/vOuBjv2ISNFPl7ZAz0Eu5hC9nLd.jpg,7.0,False,True,False,False,Others,tt1245537,99
-8688,256,tt0348124,15567,62,9210,65,Stitch! The Movie,"[16, 12, 35]",US,2003,60,"['Daveigh Chase', 'Chris Sanders', 'Tia Carrere', 'David Ogden Stiers', 'Kevin McDonald', 'Liliana Mumy', 'Jeff Bennett']","['Tony Craig', 'Roberts Gannaway']",Stitch! The Movie,"The continuing adventures of Lilo, a little Hawaiian girl, and Stitch, the galaxy's most wanted extraterrestrial. Stitch, Pleakley, and Dr. Jumba are all part of the household now. But what Lilo and Stitch don't know is that Dr. Jumba brought one of his alien ""experiments"" to Hawaii.",Stitch was Experiment 626...meet the other 625!,dUr6plz3NHU,/Apq6rZlmKnWIsctO8PkUvLFEJYq.jpg,https://image.tmdb.org/t/p/original/Apq6rZlmKnWIsctO8PkUvLFEJYq.jpg,1.0,False,True,False,False,North America,tt0348124,16
-8689,257,tt0250754,70773,59,1504,54,Stepsister from Planet Weird,"[35, 10751, 878]",__,2000,85,"['Courtnee Draper', 'Tamara Hope', 'Lance Guest', 'Khrystyne Haje', 'Vanessa Lee Chester', 'Myles Jeffrey', 'Lauren Maltby']",['Steve Boyum'],Stepsister from Planet Weird,Megan's world is turned upside down when she hears her calm life with her little brother and single mum is about to change. She hears she's soon to have a stepfather and a stepsister. Megan thinks they're a bit weird and is determined to stop the wedding. She discovers they're actually even stranger than she thought - they're from another planet.,,so-SMl9PDk8,/pWqLLg85Ep2hfzQKfWxG1TgIl9s.jpg,https://image.tmdb.org/t/p/original/pWqLLg85Ep2hfzQKfWxG1TgIl9s.jpg,0.0,False,True,False,False,Others,tt0250754,35
-8690,258,tt1579247,35558,61,14545,70,Starstruck,"[35, 10751, 10402]",US,2010,81,"['Sterling Knight', 'Danielle Campbell', 'Brandon Mychal Smith', 'Chelsea Kane', 'Maggie Castle', 'Matt Winston', 'Toni Trucks']",['Michael Grossman'],Starstruck,"Pop star Christopher Wilde has fame, fortune and a big-budget Hollywood movie awaiting him. But after meeting Jessica Olson, a down-to-earth girl from the Midwest, he is faced with following his heart or doing what's best for his career.",,Zn-D-9su1Lw,/1CgkCNF5fYAp9d5pDzp7BEnZD0b.jpg,https://image.tmdb.org/t/p/original/1CgkCNF5fYAp9d5pDzp7BEnZD0b.jpg,1.0,False,True,False,False,North America,tt1579247,35
-8691,259,tt4858674,382748,62,4877,76,Stargirl,"[35, 18, 14]",US,2020,107,"['Grace VanderWaal', 'Graham Verchere', 'Karan Brar', 'Maximiliano HernÃ¡ndez', 'Darby Stanchfield', 'Giancarlo Esposito', 'Collin Blackford']",['Julia Hart'],Stargirl,"Leo Borlock is an average student at Mica High School. He gets decent grades, is a member of the school's marching band and has always been content flying under the radar. But all that changes when he meets Stargirl Caraway, a confident and colorful new student with a penchant for the ukulele, who stands out in a crowd. She is kind, finds magic in the mundane and touches the lives of others with the simplest of gestures. Her eccentricities and infectious personality charm Leo and the student body, and she quickly goes from being ignored and ridiculed to accepted and praised, then back again, sending Leo on a rollercoaster ride of emotions.",Why be ordinary when you could be extraordinary.,fE-e7v4bvxw,/gwsrtzSrr7G6xjxsa7IwaAMHpEF.jpg,https://image.tmdb.org/t/p/original/gwsrtzSrr7G6xjxsa7IwaAMHpEF.jpg,8.0,False,True,False,False,North America,tt4858674,35
-8692,260,tt2527338,181812,65,409259,65,Star Wars: The Rise of Skywalker,"[28, 12, 14]",US,2019,142,"['Carrie Fisher', 'Mark Hamill', 'Daisy Ridley', 'Adam Driver', 'John Boyega', 'Oscar Isaac', 'Anthony Daniels']",['J.J. Abrams'],Star Wars: The Rise of Skywalker,"The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",Every generation has a legend,8Qn_spdM5Zg,/db32LaOibwEliAmSL2jjDF6oDdj.jpg,https://image.tmdb.org/t/p/original/db32LaOibwEliAmSL2jjDF6oDdj.jpg,11.0,False,True,False,False,North America,tt2527338,28
-8693,261,tt2527336,181808,69,594014,69,Star Wars: The Last Jedi,"[28, 12, 14]",US,2017,152,"['Mark Hamill', 'Carrie Fisher', 'Adam Driver', 'Daisy Ridley', 'John Boyega', 'Oscar Isaac', 'Andy Serkis']",['Rian Johnson'],Star Wars: The Last Jedi,"Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",Darkness rises... and light to meet it,Q0CbN8sfihY,/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg,https://image.tmdb.org/t/p/original/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg,11.0,False,True,False,False,North America,tt2527336,28
-8694,262,tt2488496,140607,78,890384,73,Star Wars: The Force Awakens,"[28, 12, 878]",US,2015,136,"['Harrison Ford', 'Mark Hamill', 'Carrie Fisher', 'Adam Driver', 'Daisy Ridley', 'John Boyega', 'Oscar Isaac']",['J.J. Abrams'],Star Wars: The Force Awakens,"Thirty years after defeating the Galactic Empire, Han Solo and his allies face a new threat from the evil Kylo Ren and his army of Stormtroopers.",Every generation has a story.,sGbxmsDFVnE,/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg,https://image.tmdb.org/t/p/original/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg,11.0,False,True,False,False,North America,tt2488496,28
-8695,263,tt1185834,12180,60,62196,61,Star Wars: The Clone Wars,"[16, 28, 12]",SG,2008,98,"['Matt Lanter', 'Ashley Eckstein', 'James Arnold Taylor', 'Dee Bradley Baker', 'Tom Kane', 'Nika Futterman', 'Ian Abercrombie']",['Dave Filoni'],Star Wars: The Clone Wars,"Set between Episode II and III, The Clone Wars is the first computer animated Star Wars film. Anakin and Obi Wan must find out who kidnapped Jabba the Hutt's son and return him safely. The Seperatists will try anything to stop them and ruin any chance of a diplomatic agreement between the Hutts and the Republic.",,hh3P3DoZZh4,/ywRtBu88SLAkNxD0GFib6qsFkBK.jpg,https://image.tmdb.org/t/p/original/ywRtBu88SLAkNxD0GFib6qsFkBK.jpg,6.0,False,True,False,False,Asia,tt1185834,16
-8696,264,tt10951528,624371,53,139,70,Star Wars: Galaxy's Edge - Adventure Awaits,[99],__,2019,81,"['Neil Patrick Harris', 'Kaley Cuoco', 'Keegan-Michael Key', 'Jay Leno', 'Sarah Hyland', 'Miles Brown', 'Billy Dee Williams']",['Christian Lamb'],Star Wars: Galaxy's Edge - Adventure Awaits,An exclusive behind-the-scenes look at the new lands at Walt Disney World Resort in Florida and Disneyland Resort in Southern California.,,4bM0Qd20t3s,/8YONsxklf7y2fnx8mOjNeWTgfPD.jpg,https://image.tmdb.org/t/p/original/8YONsxklf7y2fnx8mOjNeWTgfPD.jpg,7.0,False,True,False,False,Others,tt10951528,99
-8697,265,tt0121766,1895,75,742981,74,Star Wars: Episode III - Revenge of the Sith,"[28, 12, 14]",US,2005,140,"['Hayden Christensen', 'Ewan McGregor', 'Natalie Portman', 'Ian McDiarmid', 'Samuel L. Jackson', 'Jimmy Smits', 'Frank Oz']",['George Lucas'],Star Wars: Episode III - Revenge of the Sith,The evil Darth Sidious enacts his final plan for unlimited power -- and the heroic Jedi Anakin Skywalker must choose a side.,The saga is complete.,5UnjrG_N8hU,/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg,https://image.tmdb.org/t/p/original/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg,9.0,False,True,False,False,North America,tt0121766,28
-8698,266,tt0121765,1894,65,670555,65,Star Wars: Episode II - Attack of the Clones,"[28, 12, 14]",US,2002,142,"['Hayden Christensen', 'Ewan McGregor', 'Natalie Portman', 'Christopher Lee', 'Samuel L. Jackson', 'Frank Oz', 'Ian McDiarmid']",['George Lucas'],Star Wars: Episode II - Attack of the Clones,"Following an assassination attempt on Senator PadmÃ© Amidala, Jedi Knights Anakin Skywalker and Obi-Wan Kenobi investigate a mysterious plot that could change the galaxy forever.",A Jedi Shall Not Know Anger. Nor Hatred. Nor Love.,gYbW1F_c9eM,/oZNPzxqM2s5DyVWab09NTQScDQt.jpg,https://image.tmdb.org/t/p/original/oZNPzxqM2s5DyVWab09NTQScDQt.jpg,6.0,False,True,False,False,North America,tt0121765,28
-8699,267,tt0120915,1893,65,761107,65,Star Wars: Episode I - The Phantom Menace,"[28, 12, 14]",US,1999,136,"['Liam Neeson', 'Ewan McGregor', 'Natalie Portman', 'Jake Lloyd', 'Ian McDiarmid', 'Pernilla August', 'Oliver Ford Davies']",['George Lucas'],Star Wars: Episode I - The Phantom Menace,"Anakin Skywalker, a young slave strong with the Force, is discovered on Tatooine. Meanwhile, the evil Sith have returned, enacting their plot for revenge against the Jedi.",Every generation has a legend. Every journey has a first step. Every saga has a beginning.,bD7bpG-zDJQ,/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg,https://image.tmdb.org/t/p/original/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg,5.0,False,True,False,False,North America,tt0120915,28
-8700,268,tt14578676,825647,66,519,66,Star Wars Biomes,"[6, 878]",US,2021,18,[''],[''],Star Wars Biomes,"Take a virtual vacation to some of the Star Wars filmsâ€™ most iconic and beloved locations like Hoth, Tatooine, and Sorgan, as this charming series whisks you off for fly-through tours of the Galaxy Far, Far Away.",,,/8I69ReO2IZtcpXnzZpKeswpPI33.jpg,https://image.tmdb.org/t/p/original/8I69ReO2IZtcpXnzZpKeswpPI33.jpg,0.0,False,True,False,False,North America,tt14578676,6
-8701,269,tt0076759,11,86,1286472,82,Star Wars,"[28, 12, 14]",US,1977,121,"['Mark Hamill', 'Harrison Ford', 'Carrie Fisher', 'Peter Cushing', 'Alec Guinness', 'Anthony Daniels', 'Kenny Baker']",['George Lucas'],Star Wars,Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.,"A long time ago in a galaxy far, far away...",XHk5kCIiGoM,/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg,https://image.tmdb.org/t/p/original/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg,6.0,False,True,False,False,North America,tt0076759,28
-8702,270,tt0111271,65158,61,1207,64,Squanto: A Warrior's Tale,"[12, 1]",US,1994,102,"['Adam Beach', 'Sheldon Peters Wolfchild', 'Irene Bedard', 'Eric Schweig', 'Leroy Peltier', 'Michael Gambon', 'Nathaniel Parker']",['Xavier Koller'],Squanto: A Warrior's Tale,"Squanto is a high-born Indian warrior from a tribe on the Atlantic coast of North America which devotes its life to hunting and rivalry with a neighboring tribe. Everything changes forever after a ship arrives from England, prospecting the region's commercial potential for the rich Sir George, who uses all his wealth and influence only for ever greater profit. When it returns, several Indians find themselves captives on board, including Squanto. The arrogant Christians consider themselves utterly superior to the 'heathen savages' and treat them as brutally as they do beasts. Squanto fights a bear in a circus, not understanding how men can be so cruel to that creature either, and manages a spectacular escape, but where must he go? He finds shelter and help in a rural monastery, where it takes his protector some effort to prevent the others considering the unknown as diabolical. In time sir George's men come looking for him most brutally...",,5SQ0RiVNQx8,/mQNYWXfUK3cEvQAQQBtwXhdaPIl.jpg,https://image.tmdb.org/t/p/original/mQNYWXfUK3cEvQAQQBtwXhdaPIl.jpg,3.0,False,True,False,False,North America,tt0111271,12
-8703,271,tt1792131,70587,46,1905,62,Spooky Buddies,"[10751, 14]",CA,2011,88,"['Sierra McCormick', 'Harland Williams', 'Rance Howard', 'Elisa Donovan', 'Jennifer Elise Cox', 'Tucker Albrizzi', 'Sage Ryan']",['Robert Vince'],Spooky Buddies,Disney's irresistible talking puppies are back in an all-new movie that takes them far across town to a mysterious mansion where something very spooky is going on.,,TXQv5_79MFc,/iPXai8I7jnEZ4vbNLryV8K8bIOC.jpg,https://image.tmdb.org/t/p/original/iPXai8I7jnEZ4vbNLryV8K8bIOC.jpg,3.0,False,True,False,False,North America,tt1792131,10751
-8704,272,tt0088161,2619,63,74274,63,Splash,"[35, 14, 10749]",US,1984,111,"['Tom Hanks', 'Daryl Hannah', 'Eugene Levy', 'John Candy', 'Dody Goodman', 'Shecky Greene', 'Richard B. Shull']",['Ron Howard'],Splash,A successful businessman falls in love with the girl of his dreams. There's one big complication though,,,,,,,,,,North America,tt0088161,35
-8705,273,tt12969826,734858,61,573,71,Spin,"[10751, 10402]",US,2021,93,"['Avantika Vandanapu', 'Kerri Medders', 'Anna Cathcart', 'Michael Bishop', 'Michela Luci', 'Agam Darshi', 'Abhay Deol']",['Manjari Makijany'],Spin,"Rhea lives with her tight-knit multigenerational family. After her motherâ€™s death, she has been her fatherâ€™s emotional rock, and her life revolves around her familyâ€™s restaurant, her eclectic group of friends, and her after-school coding club. Everything changes when she falls for aspiring DJ Max and a long lost passion for music is reignited. Rhea discovers that she has a natural gift for creating beats and producing music that blends her Indian heritage, but must find the courage to follow her true inner talent.",Music is everything.,ZzXQSqpTR-o,/iWAatef80X3zooIBQN0Y4tQCM1K.jpg,https://image.tmdb.org/t/p/original/iWAatef80X3zooIBQN0Y4tQCM1K.jpg,3.0,False,True,False,False,North America,tt12969826,10751
-8706,274,tt1164647,14749,44,2611,58,Space Buddies,"[12, 10751, 14]",CA,2009,84,"['Diedrich Bader', 'Field Cate', 'Kendall Cross', 'Mike Dopud', 'Jason Earles', 'Bill Fagerbakke', 'Pat Finn']",['Robert Vince'],Space Buddies,"B-Dawg, Mudbud, Budderball, and all the rest of the Buddies are back, but this time, they're setting their sights even higher -- as in, the moon! With the help of their new pals Spudnick (voiced by Jason Earles) and Gravity, these pooches are go for launch. But to pull off their moon landing and make it home safely, our canine heroes will have to summon all their bravery and imagination...",,CIeFD_rW-2Q,/zdfc6vrNQMttoaQvUbyYb6BvvGF.jpg,https://image.tmdb.org/t/p/original/zdfc6vrNQMttoaQvUbyYb6BvvGF.jpg,2.0,False,True,False,False,North America,tt1164647,12
-8707,275,tt2948372,508442,81,285551,82,Soul,"[16, 12, 35]",US,2020,101,"['Jamie Foxx', 'Tina Fey', 'Graham Norton', 'Rachel House', 'Alice Braga', 'Richard Ayoade', 'Phylicia RashÄ\x81d']",['Pete Docter'],Soul,"Joe Gardner is a middle school teacher with a love for jazz music. After a successful audition at the Half Note Club, he suddenly gets into an accident that separates his soul from his body and is transported to the You Seminar, a center in which souls develop and gain passions before being transported to a newborn child. Joe must enlist help from the other souls-in-training, like 22, a soul who has spent eons in the You Seminar, in order to get back to Earth.",Is all this living really worth dying for?,Gs--6c7Hn_A,/hm58Jw4Lw8OIeECIq5qyPYhAeRJ.jpg,https://image.tmdb.org/t/p/original/hm58Jw4Lw8OIeECIq5qyPYhAeRJ.jpg,5.0,False,True,False,False,North America,tt2948372,16
-8708,276,tt3778644,348350,69,316879,66,Solo: A Star Wars Story,"[28, 12, 878]",US,2018,135,"['Alden Ehrenreich', 'Joonas Suotamo', 'Woody Harrelson', 'Emilia Clarke', 'Donald Glover', 'Thandiwe Newton', 'Phoebe Waller-Bridge']",['Ron Howard'],Solo: A Star Wars Story,"Through a series of daring escapades deep within a dark and dangerous criminal underworld, Han Solo meets his mighty future copilot Chewbacca and encounters the notorious gambler Lando Calrissian.",Never tell him the odds.,jPEYpryMp2s,/4oD6VEccFkorEBTEDXtpLAaz0Rl.jpg,https://image.tmdb.org/t/p/original/4oD6VEccFkorEBTEDXtpLAaz0Rl.jpg,11.0,False,True,False,False,North America,tt3778644,28
-8709,277,tt1068284,68591,60,2354,62,Snowglobe,"[10751, 14]",CA,2007,120,"['Christina Milian', 'Josh Cooke', 'Erin Karpluk', 'Lorraine Bracco', 'Luciana Carro', 'Ennis Esmer', 'Ron Canada']",['Ron Lagomarsino'],Snowglobe,"A young woman discovers a Christmas-themed dreamworld inside a magical snowglobe. Angela loves Christmas more than anything. However, her family does not share her love for the holiday at all. When she is about to breakdown because of her family, she receives a snowglobe in the mail. When she opens up the snowglobe, she is transported into the world inside, where Christmas is the heart and soul for everyone who lives there. She discovers she can return to her world by going down a small path in the small forest at the edge of the village, and can return whenever she winds up the snowglobe. After a long set of visits to the globe, she accidentally gets trapped inside.",,qaFweYEmWzs,/8MCX4KlF8O3cdoSiX1jiUsyVXMp.jpg,https://image.tmdb.org/t/p/original/8MCX4KlF8O3cdoSiX1jiUsyVXMp.jpg,3.0,False,True,False,False,North America,tt1068284,10751
+id,group,year,duration,plateform,continent,rating,link,size
+myriel,1,2013,151,"['Disney +', 'Amazon Prime']",North America,2,http://,19
+napoleon,1,2013,84,"['Amazon Prime', 'Disney +', 'Netflix']",South America,40,http://,42
+mlle.baptistine,1,1975,175,"['Netflix', 'Disney +', 'Amazon Prime']",Asia,24,http://,41
+mme.magloire,1,2017,126,"['Netflix', 'Disney +', 'Amazon Prime']",Europe,99,http://,13
+countessdelo,1,2004,85,['Disney +'],South America,20,http://,48
+geborand,1,2006,148,['Amazon Prime'],Europe,1,http://,20
+champtercier,1,2009,115,"['Disney +', 'Amazon Prime']",South America,28,http://,7
+cravatte,1,1989,124,"['Disney +', 'Netflix']",South America,23,http://,7
+count,1,1987,124,['Amazon Prime'],Europe,34,http://,23
+oldman,1,2015,154,['Netflix'],Asia,24,http://,54
+labarre,2,2018,130,"['Netflix', 'Disney +', 'Amazon Prime']",Africa,14,http://,21
+valjean,2,2018,118,"['Amazon Prime', 'Disney +']",North America,81,http://,15
+marguerite,3,1991,128,"['Amazon Prime', 'Netflix']",Asia,88,http://,57
+mme.der,2,2017,121,"['Amazon Prime', 'Disney +']",Africa,9,http://,59
+isabeau,2,1994,160,"['Disney +', 'Netflix']",Europe,66,http://,5
+gervais,2,1984,141,"['Netflix', 'Disney +', 'Amazon Prime']",South America,7,http://,47
+tholomyes,3,2000,166,"['Amazon Prime', 'Netflix', 'Disney +']",Europe,72,http://,47
+listolier,3,2000,164,"['Amazon Prime', 'Netflix', 'Disney +']",North America,90,http://,50
+fameuil,3,2010,98,"['Netflix', 'Disney +']",Africa,34,http://,32
+blacheville,3,1976,63,"['Netflix', 'Disney +']",South America,63,http://,48
+favourite,3,1990,65,['Amazon Prime'],Asia,79,http://,57
+dahlia,3,1977,166,['Amazon Prime'],Africa,100,http://,37
+zephine,3,1981,63,"['Amazon Prime', 'Disney +', 'Netflix']",North America,99,http://,60
+fantine,3,1998,144,"['Netflix', 'Amazon Prime']",Africa,0,http://,53
+mme.thenardier,4,2011,94,['Netflix'],North America,53,http://,32
+thenardier,4,1983,64,"['Amazon Prime', 'Disney +', 'Netflix']",Africa,90,http://,52
+cosette,5,2009,151,"['Amazon Prime', 'Disney +']",Africa,6,http://,57
+javert,4,2006,162,"['Disney +', 'Netflix', 'Amazon Prime']",South America,70,http://,10
+fauchelevent,0,1978,61,"['Amazon Prime', 'Netflix', 'Disney +']",North America,25,http://,54
+bamatabois,2,2008,99,"['Amazon Prime', 'Disney +', 'Netflix']",Europe,36,http://,17
+perpetue,3,2010,86,"['Disney +', 'Netflix']",Africa,39,http://,32
+simplice,2,1989,131,['Netflix'],North America,47,http://,32
+scaufflaire,2,1994,125,"['Amazon Prime', 'Netflix', 'Disney +']",Asia,93,http://,59
+woman1,2,2006,160,"['Netflix', 'Amazon Prime']",Europe,43,http://,43
+judge,2,2001,78,"['Amazon Prime', 'Disney +', 'Netflix']",Asia,79,http://,55
+champmathieu,2,1997,79,['Netflix'],Asia,25,http://,12
+brevet,2,2015,174,"['Amazon Prime', 'Netflix', 'Disney +']",Europe,8,http://,60
+chenildieu,2,1998,101,"['Amazon Prime', 'Disney +']",North America,65,http://,17
+cochepaille,2,1975,156,"['Amazon Prime', 'Netflix', 'Disney +']",North America,79,http://,6
+pontmercy,4,1990,90,['Netflix'],North America,77,http://,36
+boulatruelle,6,2013,127,['Netflix'],Asia,97,http://,44
+eponine,4,2013,148,"['Netflix', 'Disney +', 'Amazon Prime']",South America,59,http://,41
+anzelma,4,2015,158,['Amazon Prime'],North America,46,http://,52
+woman2,5,2007,130,['Amazon Prime'],Asia,77,http://,50
+motherinnocent,0,1975,128,['Disney +'],Asia,58,http://,51
+gribier,0,1988,159,"['Amazon Prime', 'Disney +', 'Netflix']",Europe,8,http://,50
+jondrette,7,2004,171,['Disney +'],Europe,35,http://,29
+mme.burgon,7,1990,117,"['Netflix', 'Amazon Prime', 'Disney +']",Africa,75,http://,29
+gavroche,8,1986,105,"['Netflix', 'Disney +']",Africa,47,http://,9
+gillenormand,5,1988,136,"['Netflix', 'Amazon Prime']",Africa,33,http://,36
+magnon,5,2005,100,"['Netflix', 'Disney +', 'Amazon Prime']",Europe,98,http://,59
+mlle.gillenormand,5,1982,174,"['Amazon Prime', 'Netflix']",Europe,74,http://,8
+mme.pontmercy,5,2018,121,"['Netflix', 'Amazon Prime']",North America,78,http://,44
+mlle.vaubois,5,2008,69,"['Disney +', 'Netflix', 'Amazon Prime']",North America,78,http://,33
+lt.gillenormand,5,1996,87,['Amazon Prime'],Europe,3,http://,52
+marius,8,1988,118,"['Amazon Prime', 'Disney +', 'Netflix']",Asia,49,http://,13
+baronesst,5,2013,121,"['Disney +', 'Netflix', 'Amazon Prime']",Africa,59,http://,59
+mabeuf,8,2006,63,"['Amazon Prime', 'Netflix', 'Disney +']",Asia,76,http://,44
+enjolras,8,1976,180,"['Netflix', 'Amazon Prime']",Europe,36,http://,45
+combeferre,8,1990,123,"['Disney +', 'Amazon Prime']",North America,8,http://,53
+prouvaire,8,1980,157,"['Netflix', 'Disney +']",North America,11,http://,20
+feuilly,8,2013,173,"['Netflix', 'Amazon Prime']",Europe,69,http://,32
+courfeyrac,8,1995,145,['Amazon Prime'],Africa,14,http://,38
+bahorel,8,1977,69,"['Amazon Prime', 'Netflix']",South America,55,http://,50
+bossuet,8,1999,116,"['Amazon Prime', 'Disney +', 'Netflix']",South America,6,http://,59
+joly,8,2009,177,['Amazon Prime'],Europe,85,http://,18
+grantaire,8,1998,112,['Amazon Prime'],North America,21,http://,5
+motherplutarch,9,2000,90,['Disney +'],South America,72,http://,3
+gueulemer,4,1996,141,"['Disney +', 'Netflix']",North America,38,http://,10
+babet,4,1988,150,['Netflix'],Africa,27,http://,33
+claquesous,4,1998,62,"['Netflix', 'Amazon Prime']",Africa,16,http://,17
+montparnasse,4,2007,179,"['Disney +', 'Netflix']",North America,88,http://,8
+toussaint,5,2013,121,"['Disney +', 'Amazon Prime', 'Netflix']",Asia,92,http://,30
+child1,10,2008,151,"['Netflix', 'Disney +']",Africa,84,http://,60
+child2,10,1976,136,['Netflix'],Europe,48,http://,41
+brujon,4,2011,107,"['Netflix', 'Amazon Prime', 'Disney +']",Africa,82,http://,29
+mme.hucheloup,8,2015,128,"['Netflix', 'Disney +', 'Amazon Prime']",South America,30,http://,42
+eRV2Of,4,1980,156,"['Disney +', 'Netflix', 'Amazon Prime']",Europe,1,http://,33
+tDsrg9,3,1990,158,['Amazon Prime'],Africa,4,http://,39
+6xNilr,5,1990,74,['Netflix'],Asia,36,http://,12
+ty0coG,6,2004,93,['Amazon Prime'],Asia,17,http://,26
+oF9Vhi,2,2017,67,['Disney +'],Asia,99,http://,42
+npT0ve,5,2008,176,"['Netflix', 'Disney +']",Europe,11,http://,3
+a8g1kA,9,1986,129,"['Disney +', 'Amazon Prime', 'Netflix']",South America,62,http://,31
+fxIuHO,8,2006,144,"['Netflix', 'Amazon Prime', 'Disney +']",North America,13,http://,59
+ba3xkA,2,1990,149,"['Amazon Prime', 'Disney +', 'Netflix']",Asia,93,http://,40
+zQsFyX,6,2013,80,['Amazon Prime'],Asia,14,http://,19
+Cc4apf,9,2003,78,['Disney +'],Europe,66,http://,17
+WI29E6,3,1997,162,"['Amazon Prime', 'Disney +']",Africa,20,http://,32
+rlgnr5,10,1999,120,['Amazon Prime'],Europe,91,http://,3
+Yer8Ce,8,1993,67,"['Amazon Prime', 'Netflix', 'Disney +']",North America,85,http://,51
+lPifHu,1,2013,170,"['Amazon Prime', 'Disney +', 'Netflix']",Africa,75,http://,11
+FUL9z0,3,1999,168,"['Disney +', 'Amazon Prime']",South America,37,http://,21
+8qc5ic,2,1989,112,"['Amazon Prime', 'Netflix']",South America,99,http://,21
+FsAqe5,1,1984,140,['Disney +'],North America,60,http://,11
+o1nMU6,2,1990,144,['Amazon Prime'],North America,25,http://,31
+o2ccBt,4,1989,105,['Netflix'],Europe,43,http://,13
+is9RtW,9,1979,116,"['Disney +', 'Amazon Prime']",Africa,74,http://,26
+FRwXg9,6,2008,117,"['Netflix', 'Amazon Prime', 'Disney +']",Africa,23,http://,42
+PHq01L,3,1985,145,"['Disney +', 'Amazon Prime']",South America,5,http://,19
+rx7znm,9,2015,142,"['Disney +', 'Amazon Prime']",Africa,35,http://,6
+6rGM23,5,1999,130,"['Amazon Prime', 'Disney +']",Asia,36,http://,48
+ohz5ts,2,2000,161,"['Disney +', 'Amazon Prime']",Europe,52,http://,43
+E3fCfl,1,1993,158,"['Amazon Prime', 'Disney +', 'Netflix']",Asia,4,http://,38
+vTBqlR,6,1996,84,"['Disney +', 'Netflix', 'Amazon Prime']",Asia,92,http://,30
+Ftu9zA,3,1976,93,"['Netflix', 'Amazon Prime', 'Disney +']",Africa,34,http://,10
+l4qe8G,7,1978,96,"['Netflix', 'Amazon Prime', 'Disney +']",Asia,28,http://,53
+hxZO9T,8,1996,173,"['Amazon Prime', 'Disney +']",Asia,26,http://,36
+HE4Ouk,3,2007,90,"['Amazon Prime', 'Disney +', 'Netflix']",Africa,35,http://,25
+dmcrj9,1,1977,158,"['Netflix', 'Disney +', 'Amazon Prime']",Europe,55,http://,59
+M9713F,4,2007,86,"['Amazon Prime', 'Disney +', 'Netflix']",Asia,44,http://,41
+jZDKV8,1,2017,164,"['Netflix', 'Amazon Prime', 'Disney +']",Asia,91,http://,60
+zSsFl9,2,1985,164,"['Netflix', 'Disney +', 'Amazon Prime']",Europe,63,http://,40
+UvgAa2,4,1995,113,"['Disney +', 'Netflix', 'Amazon Prime']",Africa,40,http://,7
+cP80Ds,4,2011,106,"['Disney +', 'Netflix']",Europe,86,http://,60
+xgzq9B,10,2008,101,"['Netflix', 'Disney +', 'Amazon Prime']",Africa,100,http://,37
+opg2oS,3,1984,116,"['Amazon Prime', 'Disney +']",Europe,43,http://,48
+RDiUZN,7,1997,68,"['Netflix', 'Amazon Prime', 'Disney +']",Asia,51,http://,8
+wDBRjH,5,2000,80,"['Disney +', 'Amazon Prime', 'Netflix']",Africa,89,http://,46
+ACuPHX,7,1981,143,"['Disney +', 'Netflix']",Africa,54,http://,22
+QuN7jL,5,1995,123,"['Disney +', 'Amazon Prime', 'Netflix']",Europe,48,http://,53
+8wxMa7,2,2008,135,['Disney +'],Asia,94,http://,42
+9JvYFA,3,2004,99,['Amazon Prime'],Europe,35,http://,16
+J08TKM,3,1999,176,['Disney +'],Europe,71,http://,4
+XgRhCZ,1,2006,68,['Disney +'],North America,80,http://,20
+OovKMN,8,2002,159,['Amazon Prime'],North America,65,http://,45
+5lQhlD,9,1987,170,"['Amazon Prime', 'Disney +']",South America,33,http://,16
+7eyt4N,1,1982,69,['Disney +'],North America,18,http://,13
+ziR2mH,3,1994,150,"['Disney +', 'Amazon Prime']",Africa,94,http://,17
+OmHyeo,2,2001,178,"['Netflix', 'Amazon Prime']",South America,54,http://,43
+0UCBeo,5,2017,153,"['Disney +', 'Netflix']",Asia,77,http://,17
+jAwcad,9,2004,110,"['Amazon Prime', 'Netflix']",Asia,23,http://,39
+h00f4j,5,2017,100,['Disney +'],Asia,13,http://,25
+iSX8Fx,8,1996,144,"['Netflix', 'Disney +']",Asia,99,http://,8
+AWQaRJ,8,1996,85,['Disney +'],Asia,26,http://,49
+ep2vtJ,4,2012,159,['Disney +'],North America,44,http://,56
+9BqGKm,6,2003,153,['Disney +'],South America,61,http://,38
+lNRu9D,9,1992,118,"['Disney +', 'Netflix']",South America,43,http://,14
+kOmMfj,4,1996,121,"['Amazon Prime', 'Disney +']",North America,71,http://,29
+q1xGSS,6,1994,95,"['Disney +', 'Amazon Prime']",Asia,53,http://,48
+P6zBfL,10,2001,141,"['Netflix', 'Disney +']",Africa,18,http://,29
+MROga1,8,1992,108,['Netflix'],Asia,43,http://,57
+HBcYzO,6,1997,135,"['Disney +', 'Amazon Prime', 'Netflix']",Europe,1,http://,43
+A3qagb,3,1990,153,"['Amazon Prime', 'Netflix', 'Disney +']",North America,31,http://,7
+HjA5SF,2,1981,111,['Amazon Prime'],Africa,72,http://,18
+EnIFuk,8,1998,155,"['Netflix', 'Disney +', 'Amazon Prime']",Africa,71,http://,7
+ShJFW7,6,1989,116,['Netflix'],Africa,23,http://,18
+wN57UE,9,1997,114,"['Amazon Prime', 'Disney +', 'Netflix']",North America,31,http://,10
+VfxsSS,8,2004,68,"['Disney +', 'Amazon Prime']",North America,70,http://,22
+VaFiPO,5,1987,142,"['Amazon Prime', 'Netflix', 'Disney +']",Africa,57,http://,24
+YNyNof,9,1980,109,['Disney +'],Asia,80,http://,23
+wei9zC,1,1989,128,"['Amazon Prime', 'Disney +']",Asia,32,http://,41
+DDxHGF,9,2004,95,['Disney +'],Africa,84,http://,41
+GZz2T8,3,1998,140,"['Amazon Prime', 'Disney +']",North America,97,http://,12
+yVQSVR,9,1990,108,['Netflix'],Africa,79,http://,38
+rWQXAL,1,1991,129,"['Amazon Prime', 'Disney +', 'Netflix']",Asia,20,http://,13
+NOcTbQ,9,2014,67,"['Amazon Prime', 'Disney +']",South America,22,http://,39
+Cvxomb,2,1992,117,['Disney +'],South America,23,http://,10
+x4F3C6,9,2002,113,"['Amazon Prime', 'Disney +']",Asia,41,http://,58
+ec1wvu,8,1995,154,['Disney +'],North America,70,http://,15
+r5sRB7,6,1988,126,"['Amazon Prime', 'Netflix', 'Disney +']",Africa,97,http://,42
+kGuhvI,2,1976,92,"['Amazon Prime', 'Disney +']",North America,85,http://,52
+iSI8u5,4,1979,83,"['Disney +', 'Netflix']",Africa,90,http://,3
+3xGG0m,1,1976,146,['Disney +'],Africa,58,http://,13
+dL6pW7,7,1986,172,['Netflix'],Asia,81,http://,46
+PRbeRx,8,2015,65,"['Disney +', 'Amazon Prime']",Europe,76,http://,44
+fFtfZa,7,2001,84,"['Disney +', 'Netflix']",Asia,73,http://,55
+2vvKFC,9,1982,150,['Amazon Prime'],Asia,72,http://,58
+shqYdX,4,1985,170,"['Amazon Prime', 'Disney +', 'Netflix']",Europe,98,http://,7
+4nsadv,2,2016,132,"['Netflix', 'Amazon Prime']",Asia,64,http://,38
+GNgzbV,1,1997,158,"['Amazon Prime', 'Netflix', 'Disney +']",North America,14,http://,11
+L2TOtL,6,1990,97,"['Netflix', 'Amazon Prime']",Africa,78,http://,23
+XVnsy9,9,1983,134,['Netflix'],Asia,27,http://,34
+uvIPmJ,7,2014,69,"['Disney +', 'Amazon Prime']",Europe,16,http://,13
+b2GKa7,1,1997,156,"['Amazon Prime', 'Netflix', 'Disney +']",North America,99,http://,40
+oWyVnc,5,2009,88,['Amazon Prime'],Asia,14,http://,32
+g6sFT9,4,1987,144,"['Amazon Prime', 'Netflix']",South America,41,http://,55
+VfFKke,5,2017,79,['Disney +'],Africa,29,http://,25
+Q8Xc5J,1,1975,112,"['Netflix', 'Amazon Prime', 'Disney +']",North America,1,http://,18
+3ANes4,7,2014,113,['Netflix'],South America,19,http://,17
+IaF3yQ,2,1995,125,"['Amazon Prime', 'Netflix']",South America,32,http://,30
+Dyr13B,2,1985,150,"['Netflix', 'Amazon Prime']",Africa,43,http://,14
+bj2c2i,10,1998,113,['Netflix'],Africa,77,http://,4
+210yrE,8,2009,121,"['Netflix', 'Amazon Prime']",Africa,59,http://,46
+3qofVz,1,1992,164,['Disney +'],Asia,49,http://,19
+4kLlWF,2,1997,96,"['Disney +', 'Netflix', 'Amazon Prime']",Europe,29,http://,20
+pXrMXt,9,2009,124,"['Disney +', 'Amazon Prime', 'Netflix']",South America,96,http://,26
+RL1XHn,7,2014,115,"['Netflix', 'Amazon Prime']",Europe,88,http://,38
+1dCzbi,2,2014,125,"['Netflix', 'Amazon Prime', 'Disney +']",North America,7,http://,51
+zGvyl6,2,2015,174,['Disney +'],North America,41,http://,19
+kOlHfx,9,2002,154,"['Amazon Prime', 'Disney +']",Africa,71,http://,40
+G4UZ0T,2,1980,156,['Netflix'],South America,12,http://,14
+BH37IP,3,1977,68,"['Netflix', 'Disney +']",Africa,94,http://,51
+dyVU5Q,8,2018,69,"['Netflix', 'Amazon Prime']",North America,2,http://,26
+PcnZ5Z,2,2013,150,['Disney +'],Europe,73,http://,56
+U3g9hk,1,1977,120,"['Netflix', 'Amazon Prime', 'Disney +']",South America,26,http://,54
+QPJGZt,6,1988,112,['Amazon Prime'],Europe,15,http://,52
+AcwGdf,8,1980,159,['Amazon Prime'],Africa,55,http://,26
+5jS31f,5,1980,175,"['Amazon Prime', 'Disney +']",Asia,60,http://,43
+s7NWW6,4,1982,180,"['Netflix', 'Disney +']",North America,59,http://,36
+O0SJEh,1,1988,71,"['Netflix', 'Amazon Prime', 'Disney +']",South America,87,http://,16
+XP9XoS,5,1987,77,['Netflix'],Europe,51,http://,4
+QPlUe6,6,1981,130,['Disney +'],South America,78,http://,39
+WaM44D,6,2011,70,['Amazon Prime'],North America,18,http://,60
+bb1Z6u,2,2011,67,"['Disney +', 'Netflix', 'Amazon Prime']",Asia,42,http://,53
+Ro12nW,8,2005,76,"['Netflix', 'Disney +']",North America,61,http://,51
+t69NeG,10,1998,99,"['Disney +', 'Amazon Prime']",North America,32,http://,22
+UWukDS,5,1987,125,"['Netflix', 'Disney +', 'Amazon Prime']",North America,25,http://,57
+0Id9Nr,2,1990,178,"['Netflix', 'Amazon Prime', 'Disney +']",Europe,93,http://,32
+FRR8Uz,9,1991,67,['Amazon Prime'],South America,54,http://,35
+xmTLzR,5,1987,110,['Amazon Prime'],South America,90,http://,45
+17o8Fq,6,2006,164,"['Disney +', 'Amazon Prime', 'Netflix']",Africa,42,http://,13
+NxfJcK,7,1992,139,['Disney +'],Africa,75,http://,44
+18r7Kk,3,2017,93,"['Amazon Prime', 'Netflix']",Asia,15,http://,10
+TuIio7,1,1984,96,"['Amazon Prime', 'Disney +']",Africa,94,http://,53
+tWHDl4,6,2015,60,['Disney +'],Europe,37,http://,45
+5YiTQy,3,1984,68,['Amazon Prime'],Asia,55,http://,58
+mNeXlP,1,1981,76,"['Netflix', 'Disney +', 'Amazon Prime']",Asia,9,http://,46
+xlEVZ9,9,1994,82,['Disney +'],South America,53,http://,51
+3kEjNV,5,2016,177,"['Amazon Prime', 'Disney +', 'Netflix']",Europe,6,http://,38
+E0yf9Q,10,1993,137,['Disney +'],Europe,90,http://,30
+lW3jiJ,5,2001,169,"['Netflix', 'Disney +']",Asia,54,http://,33
+g7PU58,8,1988,152,"['Amazon Prime', 'Netflix']",South America,50,http://,52
+WOb1g3,2,1988,96,['Amazon Prime'],North America,11,http://,5
+CnRVlQ,7,2006,89,"['Disney +', 'Netflix']",Africa,2,http://,57
+hVenn1,5,1987,151,"['Amazon Prime', 'Disney +', 'Netflix']",Africa,90,http://,27
+Fbabvn,5,1976,143,['Disney +'],Africa,81,http://,43
+poa8Mf,8,2001,67,"['Netflix', 'Amazon Prime']",Europe,20,http://,16
+8beWgE,9,1995,144,"['Amazon Prime', 'Netflix']",Europe,2,http://,60
+9YEgGO,8,2009,75,"['Netflix', 'Amazon Prime']",Africa,54,http://,24
+YWnT37,3,1994,94,"['Amazon Prime', 'Disney +', 'Netflix']",Europe,80,http://,5
+cHQlmM,9,2003,161,['Amazon Prime'],North America,11,http://,60
+wrLNeg,10,1987,169,"['Disney +', 'Netflix']",Europe,68,http://,34
+9Z1HMk,4,1989,168,"['Disney +', 'Amazon Prime']",Asia,44,http://,18
+P8ODtl,7,1984,91,['Amazon Prime'],Europe,86,http://,38
+O04Qkx,1,1980,179,['Disney +'],North America,80,http://,58
+mrRlIr,7,2007,161,"['Disney +', 'Amazon Prime', 'Netflix']",Europe,98,http://,36
+qHXgi4,2,2008,134,"['Amazon Prime', 'Disney +']",Asia,61,http://,42
+Os71hs,1,2005,109,"['Disney +', 'Netflix', 'Amazon Prime']",South America,29,http://,3
+aercYV,9,1996,113,['Disney +'],Europe,63,http://,16
+JImSOC,5,1982,134,['Netflix'],South America,41,http://,6
+5GKYV9,7,2010,83,['Netflix'],Africa,72,http://,39
+qvpTyk,7,1975,167,"['Amazon Prime', 'Netflix']",Africa,67,http://,20
+JZJWYj,5,1995,139,"['Amazon Prime', 'Netflix']",Africa,12,http://,4
+h7BNw7,10,1995,174,"['Netflix', 'Disney +', 'Amazon Prime']",Africa,27,http://,32
+7cmRZJ,3,2006,111,['Amazon Prime'],South America,80,http://,58
+hQCWnW,9,1999,76,['Disney +'],Asia,97,http://,9
+H1wX8u,5,1994,62,['Disney +'],Europe,67,http://,36
+uh8JfJ,5,1978,123,"['Netflix', 'Disney +', 'Amazon Prime']",North America,59,http://,21
+5jTjVr,2,2003,123,"['Disney +', 'Amazon Prime']",South America,41,http://,22
+Tq5lr1,5,1981,86,"['Netflix', 'Amazon Prime']",South America,26,http://,30
+DLD7BP,7,2004,87,['Netflix'],Asia,39,http://,33
+Wpn0RH,4,2017,74,"['Netflix', 'Disney +']",Europe,36,http://,44
+DheuSo,1,1985,101,"['Disney +', 'Amazon Prime']",Asia,80,http://,23
+AWOx6l,1,2006,172,"['Amazon Prime', 'Netflix', 'Disney +']",Africa,65,http://,35
+HEkO08,9,1984,101,"['Netflix', 'Amazon Prime']",Africa,77,http://,28
+rPAX0a,8,1982,133,"['Disney +', 'Netflix', 'Amazon Prime']",South America,90,http://,5
+UMv3yF,4,1979,99,"['Amazon Prime', 'Netflix', 'Disney +']",Asia,9,http://,49
+4H8tqF,2,1997,168,"['Amazon Prime', 'Disney +', 'Netflix']",Africa,86,http://,11
+AV5kmh,8,1994,143,"['Disney +', 'Amazon Prime']",South America,27,http://,11
+qWFygc,10,1976,97,['Netflix'],Asia,94,http://,10
+Bp0I2y,9,1989,107,['Disney +'],North America,94,http://,30
+nKB3Sl,10,2012,81,"['Netflix', 'Amazon Prime']",Africa,92,http://,46
+TUsCJB,6,2018,127,"['Netflix', 'Amazon Prime']",Africa,97,http://,10
+8dEBaQ,5,1999,63,"['Disney +', 'Amazon Prime', 'Netflix']",Asia,47,http://,51
+YmDzwq,6,2002,140,"['Amazon Prime', 'Netflix', 'Disney +']",Africa,39,http://,23
+M0ZYVI,6,1999,72,"['Amazon Prime', 'Netflix']",South America,6,http://,46
+mJzvjA,3,1983,80,"['Netflix', 'Disney +']",Asia,74,http://,50
+v7akXK,6,1987,145,"['Disney +', 'Amazon Prime']",Europe,38,http://,21
+qKFvcW,9,2002,116,"['Amazon Prime', 'Disney +']",North America,45,http://,27
+Nv4THR,5,1996,91,"['Amazon Prime', 'Disney +', 'Netflix']",Asia,100,http://,42
+SbFhLi,9,2011,144,['Amazon Prime'],South America,100,http://,7
+mLnI96,4,2003,151,['Amazon Prime'],Africa,74,http://,33
+ypONdw,7,2005,166,"['Disney +', 'Amazon Prime']",Asia,86,http://,57
+MzKBNF,5,1988,118,"['Amazon Prime', 'Netflix']",South America,33,http://,31
+P1tIev,6,2009,129,['Amazon Prime'],South America,99,http://,57
+JAb26X,10,1983,140,"['Amazon Prime', 'Netflix', 'Disney +']",Europe,32,http://,37
+KxnicG,10,2014,168,"['Disney +', 'Netflix', 'Amazon Prime']",South America,42,http://,36
+Wv1Jck,3,1981,117,"['Disney +', 'Netflix']",Europe,51,http://,39
+AuxSil,8,1998,62,"['Disney +', 'Amazon Prime']",Europe,12,http://,31
+xrMtjb,10,2013,138,"['Amazon Prime', 'Disney +', 'Netflix']",North America,34,http://,21
+GGfSzJ,3,1990,161,"['Netflix', 'Disney +', 'Amazon Prime']",North America,98,http://,44
+ZT0o7i,5,2014,171,"['Netflix', 'Amazon Prime', 'Disney +']",Europe,70,http://,3
+mG7zkL,3,1993,160,"['Disney +', 'Netflix', 'Amazon Prime']",Asia,100,http://,24
+SZGGTw,2,2002,156,"['Amazon Prime', 'Netflix']",Asia,12,http://,51
+za0lgm,2,2006,109,"['Amazon Prime', 'Disney +', 'Netflix']",Asia,40,http://,43
+Sy2p1T,4,2011,162,"['Amazon Prime', 'Disney +']",South America,100,http://,13
+YhVVjK,7,1990,154,['Amazon Prime'],South America,89,http://,41
+lukCZH,4,1983,168,"['Amazon Prime', 'Disney +']",South America,34,http://,32
+F02vCs,7,2012,65,['Netflix'],Europe,15,http://,43
+8dAIp9,8,1994,152,"['Amazon Prime', 'Netflix']",South America,45,http://,13
+cVg8Mr,5,1989,97,"['Amazon Prime', 'Disney +']",Asia,8,http://,35
+luRNkM,7,1981,60,['Disney +'],Africa,56,http://,58
+Jt5EMs,7,1985,156,['Disney +'],South America,37,http://,54
+U7Gsl2,4,2014,120,"['Netflix', 'Amazon Prime', 'Disney +']",Africa,48,http://,58
+NEvRPT,5,1979,146,['Amazon Prime'],South America,9,http://,46
+lIIX6W,2,1976,101,"['Amazon Prime', 'Disney +', 'Netflix']",North America,2,http://,44
+NBcv4E,2,2011,100,"['Netflix', 'Amazon Prime', 'Disney +']",North America,58,http://,29
+5LVgNI,4,2002,74,['Netflix'],North America,1,http://,5
+Xj0nDn,2,1986,131,['Disney +'],Asia,26,http://,13
+EsHSop,8,2008,134,"['Amazon Prime', 'Disney +', 'Netflix']",Europe,40,http://,56
+18VCAg,4,1989,87,['Amazon Prime'],Africa,18,http://,22
+akbWZK,7,2001,85,"['Netflix', 'Disney +', 'Amazon Prime']",Africa,75,http://,42
+ThVkZF,1,1997,106,"['Disney +', 'Amazon Prime']",Africa,67,http://,34
+nTVNQD,8,2003,166,"['Disney +', 'Netflix']",Europe,79,http://,35
+z5w9JN,3,1999,177,"['Disney +', 'Amazon Prime']",Africa,23,http://,13
+NV76ZG,3,2000,99,['Disney +'],Asia,75,http://,37
+Dzjx6H,7,1984,164,['Disney +'],South America,75,http://,56
+wQoTCK,5,1994,175,['Amazon Prime'],South America,76,http://,15
+ln3iL8,1,2012,166,['Netflix'],South America,52,http://,51
+nhbZxv,4,1994,109,['Disney +'],South America,11,http://,59
+96Mkd7,4,1985,130,['Netflix'],Asia,85,http://,7
+gcL4eJ,6,2000,174,"['Disney +', 'Netflix']",Asia,32,http://,10
+ZE5aUA,4,2000,78,"['Netflix', 'Amazon Prime']",Europe,48,http://,13
+34y7m2,10,2008,63,['Amazon Prime'],South America,67,http://,44
+JOdn4e,10,1990,144,['Netflix'],Asia,94,http://,45
+OnLXeF,10,1979,125,['Netflix'],Asia,51,http://,12
+c0Yf35,1,1989,97,['Disney +'],Europe,89,http://,4
+VkovcE,4,1979,174,['Amazon Prime'],Asia,100,http://,35
+wKZZKo,2,2018,112,['Disney +'],Asia,46,http://,23
+byTilm,4,1990,177,"['Disney +', 'Amazon Prime']",South America,26,http://,38
+BMeEcW,9,1975,167,"['Netflix', 'Disney +']",North America,44,http://,29
+fMzid8,6,1997,94,"['Netflix', 'Amazon Prime']",Africa,53,http://,9
+U44mfj,9,1993,143,['Disney +'],Africa,65,http://,45
+d5eHvV,9,2005,158,"['Disney +', 'Amazon Prime']",Asia,89,http://,54
+mXGGas,8,2010,112,"['Netflix', 'Disney +']",Europe,33,http://,50
+mgxXBE,4,1992,128,"['Disney +', 'Netflix', 'Amazon Prime']",Europe,49,http://,22
+P1D8eL,6,1996,104,['Disney +'],South America,81,http://,55
+oHMfEr,4,1975,100,['Amazon Prime'],Europe,72,http://,6
+38aaxn,7,2002,80,"['Amazon Prime', 'Netflix', 'Disney +']",South America,78,http://,8
+zcgXk6,1,1982,96,"['Netflix', 'Disney +', 'Amazon Prime']",Asia,48,http://,21
+dY2RKB,3,1989,62,['Amazon Prime'],Asia,19,http://,19
+uMNxnY,6,2004,110,"['Disney +', 'Netflix']",North America,54,http://,54
+QQwI6u,4,1977,82,['Amazon Prime'],South America,51,http://,46
+ShgONx,2,1998,116,"['Amazon Prime', 'Netflix', 'Disney +']",Asia,83,http://,51
+zBkWqm,7,1999,154,"['Disney +', 'Amazon Prime', 'Netflix']",Europe,35,http://,44
+w6EVY6,5,2009,88,['Netflix'],Europe,3,http://,49
+fXYKu2,5,1982,166,"['Netflix', 'Disney +', 'Amazon Prime']",South America,88,http://,7
+pvDoz5,6,2018,125,"['Amazon Prime', 'Disney +', 'Netflix']",Africa,28,http://,14
+Cv2ceV,2,2007,90,"['Amazon Prime', 'Disney +']",South America,9,http://,53
+kxTVa0,9,1979,175,"['Disney +', 'Netflix', 'Amazon Prime']",Africa,76,http://,8
+bdrNBw,8,1998,87,['Disney +'],Europe,7,http://,43
+fjjNYW,7,1988,174,['Disney +'],South America,12,http://,50
+OvyM0n,2,2005,67,['Amazon Prime'],North America,41,http://,4
+KB7cw1,2,1980,172,['Amazon Prime'],North America,91,http://,3
+tW4bDK,10,1976,127,['Disney +'],Asia,74,http://,7
+VI3dzN,5,1977,155,"['Disney +', 'Amazon Prime', 'Netflix']",Asia,59,http://,11
+fp3thP,8,2002,159,['Disney +'],South America,71,http://,33
+Ms7QHI,4,1997,176,"['Netflix', 'Disney +']",South America,55,http://,40
+Bjw2YW,8,1980,157,['Netflix'],Asia,32,http://,12
+6Ai55s,8,1979,98,['Netflix'],Europe,59,http://,7
+TMqy2K,9,1976,170,"['Netflix', 'Disney +', 'Amazon Prime']",South America,97,http://,36
+NobcxX,6,1992,148,"['Netflix', 'Disney +']",North America,46,http://,42
+CpN7yM,6,2013,147,"['Disney +', 'Netflix', 'Amazon Prime']",Africa,92,http://,33
+Mpw1LU,2,1983,118,['Disney +'],North America,99,http://,14
+Yn506y,6,2003,82,"['Disney +', 'Amazon Prime', 'Netflix']",North America,56,http://,43
+pTZOpw,3,1986,139,['Amazon Prime'],North America,65,http://,22
+fhtmr7,4,2013,130,['Amazon Prime'],Asia,35,http://,52
+pu7frW,1,1990,124,"['Disney +', 'Amazon Prime', 'Netflix']",South America,2,http://,15
+i8zvRp,3,2011,172,"['Disney +', 'Netflix', 'Amazon Prime']",Asia,95,http://,48
+C6yuFW,5,1997,125,['Disney +'],North America,34,http://,46
+V3W274,6,1981,118,"['Amazon Prime', 'Netflix', 'Disney +']",Europe,26,http://,27
+tcA1hC,10,1992,84,"['Amazon Prime', 'Disney +']",North America,21,http://,14
+1FUxSh,8,1991,152,['Netflix'],North America,79,http://,32
+VhI7pw,10,2017,116,['Amazon Prime'],South America,82,http://,41
+lX1F8b,5,2008,127,"['Amazon Prime', 'Netflix', 'Disney +']",Asia,61,http://,25
+68ZpPw,10,1991,118,['Disney +'],North America,63,http://,49
+684LJM,8,1980,164,"['Disney +', 'Netflix']",Europe,36,http://,12
+F31p60,2,1984,120,"['Disney +', 'Netflix']",Asia,23,http://,10
+G4sCsB,5,1979,155,['Disney +'],North America,60,http://,56
+hLWJKI,6,1980,120,"['Disney +', 'Amazon Prime', 'Netflix']",Europe,12,http://,25
+RCtkhl,7,1991,140,"['Amazon Prime', 'Netflix', 'Disney +']",North America,58,http://,26
+r8yoV4,3,2006,79,['Disney +'],Asia,10,http://,23
+rOBki1,3,2008,122,['Disney +'],Europe,61,http://,56
+GC5vlA,3,2016,147,"['Disney +', 'Amazon Prime']",North America,47,http://,58
+KXjNg2,8,1988,110,['Amazon Prime'],North America,64,http://,11
+qsKlXI,4,2000,168,"['Netflix', 'Disney +', 'Amazon Prime']",North America,35,http://,22
+a0sLY2,9,1995,102,"['Amazon Prime', 'Netflix']",Asia,10,http://,19
+TZc8yZ,1,1997,65,"['Amazon Prime', 'Netflix', 'Disney +']",South America,82,http://,7
+ZJDxYH,3,1984,62,"['Disney +', 'Amazon Prime']",Europe,16,http://,42
+3EABwv,8,2010,68,"['Netflix', 'Disney +', 'Amazon Prime']",Africa,31,http://,50
+hjJ0ht,2,1988,149,"['Amazon Prime', 'Netflix', 'Disney +']",Asia,51,http://,54
+fsCFKg,8,2004,154,['Amazon Prime'],North America,36,http://,49
+Xvwt3o,3,2011,70,"['Disney +', 'Netflix', 'Amazon Prime']",North America,39,http://,11
+6MftA5,8,2009,71,['Amazon Prime'],Asia,64,http://,20
+9K3aIQ,1,2005,162,"['Amazon Prime', 'Disney +']",Europe,54,http://,44
+oO9chU,5,2013,144,"['Amazon Prime', 'Disney +', 'Netflix']",South America,80,http://,60
+ni0SVw,5,2010,148,['Amazon Prime'],Africa,50,http://,19
+y8kXTQ,6,1985,119,['Netflix'],Europe,98,http://,4
+Gc6yjS,6,1995,131,"['Amazon Prime', 'Disney +', 'Netflix']",Asia,60,http://,46
+YrskJz,10,1982,90,['Netflix'],North America,42,http://,21
+vAaKAU,8,2014,102,"['Amazon Prime', 'Netflix']",Europe,77,http://,47
+IOraxz,5,1993,81,"['Amazon Prime', 'Netflix', 'Disney +']",Europe,90,http://,22
+C72ghC,1,2002,174,['Disney +'],Africa,41,http://,26
+DkexHU,1,1998,143,"['Disney +', 'Netflix', 'Amazon Prime']",North America,7,http://,8
+MK85Fz,7,2017,143,['Netflix'],Asia,29,http://,47
+xLgYsH,8,2009,95,"['Disney +', 'Amazon Prime', 'Netflix']",Africa,100,http://,49
+uH2CzG,8,1989,180,"['Amazon Prime', 'Disney +']",South America,75,http://,35
+n0cV1c,7,2004,133,['Disney +'],Europe,29,http://,12
+gJCYdC,4,2016,79,"['Netflix', 'Amazon Prime', 'Disney +']",North America,34,http://,23
