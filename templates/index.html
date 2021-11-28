@@ -46,33 +46,41 @@
           <h2>Global search</h2>
         </center>  
       </div>
+
+      <div class="form-check reset">
+        <label class="form-check-label" for="reset">
+          Reset  all
+        </label>
+        <input class="form-check-input" type="checkbox" value="" id="reset">
+      </div>
+
       <div id = "filter" class = "worldwide">
         <h4>Worldwide</h4>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" value="" id="Africa">
           <label class="form-check-label" for="Africa">
             Africa
           </label>
         </div>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" value="" id="Asia">
           <label class="form-check-label" for="Asia">
             Asia
           </label>
         </div>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" value="" id="Europe">
           <label class="form-check-label" for="Europe">
             Europe
           </label>
         </div>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" value="" id="North America">
           <label class="form-check-label" for="North America">
             North America
           </label>
         </div>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" value="" id="South America">
           <label class="form-check-label" for="South America">
             South America
@@ -80,34 +88,27 @@
         </div>
       </div>
 
-      <div class="form-check reset">
-        <input class="form-check-input" type="checkbox" value="" id="reset">
-        <label class="form-check-label" for="reset">
-          Reset  all
-        </label>
-      </div>
-
       <div id = "filter" class = "streaming">
         <h4>Streaming Service</h4>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" value="" id="Amazon Prime">
           <label class="form-check-label" for="Amazon Prime">
             Amazon Prime
           </label>
         </div>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" value="" id="Disney +">
           <label class="form-check-label" for="Disney +">
             Disney +
           </label>
         </div>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" value="" id="Netflix">
           <label class="form-check-label" for="Netflix">
             Netflix
           </label>
         </div>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" value="" id="HBO">
           <label class="form-check-label" for="HBO">
             HBO
@@ -116,21 +117,27 @@
       </div>
 
       <div id = "filter" class = "year slidecontainer">
-        <h4>Year of release</h4>
-          <input type="text" id="year" style="border:0; color:white; font-weight:bold; background: #c30000">
+        <h4> Year of release </h4>
+        <input type="text" id="year" style="border:0; color:white; font-weight:bold; background: #c30000">
+        <div id = "filter" class = "sliderbar">
           <div id="year-movie"></div>
+        </div>
       </div>
 
       <div id = "filter" class = "duration slidecontainer">
-        <h4>Duration</h4>
+        <h4> Duration </h4>
         <input type="text" id="time" style="border:0; color:white; font-weight:bold; background: #c30000">
-        <div id="duration-movie"></div>
+        <div id = "filter" class = "sliderbar">
+          <div id="duration-movie"></div>
+        </div>
       </div>
 
       <div id = "filter" class = "rating slidecontainer">
-        <h4>Rating</h4>
+        <h4> Rating </h4>
         <input type="text" id="rate" style="border:0; color:white; font-weight:bold; background: #c30000">
-        <div id="rating-movie"></div>
+        <div id = "filter" class = "sliderbar">
+          <div id="rating-movie"></div>
+        </div>
       </div>
 
     </nav>
@@ -307,7 +314,7 @@
       range: "min",
       min: 0,
       max: 5,
-      value: 3,
+      value: 5,
       step: 1,
       slide: function( event, ui ) {
       $( "#rate" ).val( ui.value);

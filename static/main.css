@@ -6,6 +6,25 @@
 .bs-tooltip-bottom .arrow::before {
   border-bottom-color: #333;
 }
+
+/* .tooltip-class {
+  right: 50px;
+  top: 100px;
+  position: absolute;
+} */
+
+/* .tooltip {
+  position: absolute;
+  display: block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {  
+  position: absolute;
+  top: 200px;
+  right: 100px;
+} */
+
 .modal-body span.badge {
   margin-left: 0.5em;
   font-size: 6pt;
@@ -50,7 +69,6 @@
   padding: 10px;
 }
 
-
 #searchbox ul li a {
   padding: 10px;
   font-size: 1.1em;
@@ -61,7 +79,6 @@
   color: #c30000;
   background: #fff;
 }
-
 
 body {
   margin-top: 0;
@@ -76,7 +93,10 @@ table {
 .wrapper {
   display: flex;
   width: 100%;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 
 div.header {
   width: 100%;
@@ -94,14 +114,14 @@ div.header {
   position: fixed;
   top:160px;
   right: 50px;
-  height: 740px;
+  height: 700px;
   z-index: 999;
   background: #c30000;
   color: #fff;
   transition: all 0.3s;
   min-width: 400px;
   max-width: 400px;
-  min-height: 740px;
+  min-height: 700px;
 }
 
 #sidebar .sidebar-header {
@@ -111,7 +131,6 @@ div.header {
 
 #sidebar ul.components {
   padding: 20px 0;
-  /* border-bottom: 1px solid white; */
 }
 
 #sidebar ul p {
@@ -142,21 +161,35 @@ div.header {
   padding: 5px;
 }
 
-#sidebar .form-check {
+#sidebar .form-check-inline  {
   padding: 2px;
+  padding-top: 5px;
   font-size: 1.1em;
-  display: block;
   color: #fff;
-  left: 100px;
 }
 
-#sidebar .reset {
-  padding: 1px;
-  font-size: 1.1em;
-  display: block;
+#sidebar .reset .form-check-label {
+  font-size: 1em;
   color: #fff;
-  left: 320px;
+  left: 290px;
+  right: auto;
+  position: relative;
   margin-bottom: 5px;
+  padding-right: 24px;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#sidebar .reset .form-check-input {
+  right: 20px;
+  padding-right: 24px;
+  padding-left: 0;
+  padding-top: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 #canvas {
@@ -204,6 +237,7 @@ div.header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 #tooltip {
   position: absolute;
   top: 0;
@@ -226,7 +260,7 @@ svg.main-canvas .node {
   stroke-opacity: 0.5;
 }
 svg.main-canvas .node.dim {
-  fill-opacity: 0.2;
+  fill-opacity: 0;
 }
 svg.main-canvas .node.selected {
   stroke-width: 10;
@@ -236,7 +270,7 @@ svg.main-canvas .link {
   stroke-opacity: 0.5;
 }
 svg.main-canvas .link.dim {
-  stroke-opacity: 0.1;
+  stroke-opacity: 0;
 }
 svg.main-canvas .link.selected {
   stroke-opacity: 1;
@@ -246,5 +280,5 @@ svg.main-canvas .text {
   fill-opacity: 0.8;
 }
 svg.main-canvas .text.dim {
-  fill-opacity: 0.1;
+  fill-opacity: 0;
 }
