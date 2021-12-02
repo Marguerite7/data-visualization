@@ -1,3 +1,4 @@
+/* To change tooltip arrow color bootstrep  */
 .tooltip-arrow,
 .tooltip > .tooltip-inner {
   background-color: #333;
@@ -7,24 +8,6 @@
   border-bottom-color: #333;
 }
 
-/* .tooltip-class {
-  right: 50px;
-  top: 100px;
-  position: absolute;
-} */
-
-/* .tooltip {
-  position: absolute;
-  display: block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {  
-  position: absolute;
-  top: 200px;
-  right: 100px;
-} */
-
 .modal-body span.badge {
   margin-left: 0.5em;
   font-size: 6pt;
@@ -32,27 +15,27 @@
 
 #searchbox {
   position: fixed;
-  top: 160px;
+  top: 440px;
   left: 50px;
   width: 300px;
-  height: 500px;
+  height: 420px;
   z-index: 999;
   background: #c30000;
   color: #fff;
   transition: all 0.3s;
   min-width: 300px;
   max-width: 300px;
-  min-height: 500px;
+  min-height: 420px;
 }
 
 #searchbox.active {
-  left: 100px;
+  margin-left: -350px;
 }
 
 .form-inline {
   text-align:center;
   display:block;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   padding: 20px 0;
 }
 
@@ -61,7 +44,7 @@
 }
 
 #searchbox ul.components {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 #searchbox ul p {
@@ -240,15 +223,15 @@ div.header {
 
 #tooltip {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #333;
+  top: 150;
+  left: 50;
+  background-color: black;
   color: #eee;
   padding: 5px 10px 5px 10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 svg.main-canvas {
   width: 100%;

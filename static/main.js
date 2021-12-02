@@ -16,7 +16,7 @@
 
 // global variables
 // [svg, svgNodes, svgLinks, svgTexts, width, height, color, nodes, links, force, node, link, text, zoom, drag, graph] = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc20, getTransform, graph, height, hideDetails, init, initUI, reload_data, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, slider_year_link, slider_year_node, slider_duration_link, slider_duration_node, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, resetAll, selected, setHighlightByNode, setHighlightByStr, setHighlightbySlider, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, yearSlider, durationSlider, filters_continent, filters_plateform, min_year, max_year, max_duration;
+var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc28, getTransform, graph, height, hideDetails, init, initUI, reload_data, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, slider_year_link, slider_year_node, slider_duration_link, slider_duration_node, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, resetAll, selected, setHighlightByNode, setHighlightByStr, setHighlightbySlider, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, yearSlider, durationSlider, filters_continent, filters_plateform, min_year, max_year, max_duration;
 
 svg = null;
 
@@ -68,7 +68,7 @@ max_year = 2021;
 
 duration = 180;
 
-gc20 = '#3366cc #dc3912 #ff9900 #109618 #990099 #0099c6 #dd4477 #66aa00 #b82e2e #316395 #994499 #22aa99 #aaaa11 #6633cc #e67300 #8b0707 #651067 #329262 #5574a6 #3b3eac'.split(' ');
+gc28 = '#3366cc #dc3912 #ff9900 #6633cc #e67300 #8b0707 #651067 #4e05f7 #5574a6 #3b3eac #485c47 #485c47 #05f5f5 #485c47 #485c47 #109618 #990099 #0099c6 #dd4477 #66aa00 #b82e2e #316395 #edd607 #329262 #f505e1 #994499 #22aa99 #aaaa11'.split(' ');
 
 url = '/api';
 
@@ -77,15 +77,16 @@ init = function() {
   $('#last-updated').text(document.lastModified);
   // initTooltips()
   initUI();
-  color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]).range(gc20);
+  color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]).range(gc28);
   drag = d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
-  zoom = d3.zoom().scaleExtent([.1, 10]).on('zoom', function() {
-    g.attr('transform', d3.event.transform);
+  zoom = d3.zoom().scaleExtent([1, 8]).on('zoom', function() {
+    g.attr('transform', d3.event.transform.translate(700, 300).scale(0.2));
   });
   // render graph
   resetCanvas();
   $('#spinner').show();
   d3.json(url).then(function(data) {
+    //filters
     if (filters_continent.length > 0 ) {
       data.nodes = data.nodes.filter(function(v) { return filters_continent.indexOf(v.continent) != -1});
       var id_node = $.map(data.nodes, function(v) {
@@ -118,6 +119,7 @@ init = function() {
       nborsdic[e.source].push(e.target);
       nborsdic[e.target].push(e.source);
     });
+    //simulation
     simulation = d3.forceSimulation(graph.nodes).force('charge', d3.forceManyBody().strength(-100)).force('collide', d3.forceCollide()).force('link', d3.forceLink(graph.links).id(function(d) {
       return d.id;
     })).force('center', d3.forceCenter(width / 2, height / 2)).on('tick', tick);
@@ -135,7 +137,7 @@ init = function() {
       showDetails(d);
     }).on('mouseout', function(d) {
       // exitHighlight()
-      hideDetails();
+      // hideDetails();
     });
     link.exit().remove();
     // node circle
@@ -146,7 +148,7 @@ init = function() {
       if (d.hasOwnProperty('size')) {
         return d.size;
       } else {
-        return 6;
+        return 20; //6
       }
     }).style('fill', function(d) {
       return nodeColor(d);
@@ -157,7 +159,7 @@ init = function() {
       showDetails(d);
     }).on('mouseout', function(d) {
       exitHighlight();
-      hideDetails();
+      // hideDetails();
     }).on('click', function(d) {
       d3.event.stopPropagation();
       if (!d3.event.defaultPrevented) { // distinguishing from click from dragging
@@ -188,7 +190,7 @@ init = function() {
       showDetails(d);
     }).on('mouseout', function(d) {
       exitHighlight();
-      hideDetails();
+      // hideDetails();
     }).on('click', function(d) {
       d3.event.stopPropagation();
       if (!d3.event.defaultPrevented) { // distinguishing from click from dragging
@@ -203,11 +205,12 @@ init = function() {
   });
 };
 
+//reload data
 reload_data = function() {
-  color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]).range(gc20);
+  color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]).range(gc28);
   drag = d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
   zoom = d3.zoom().scaleExtent([.1, 10]).on('zoom', function() {
-    g.attr('transform', d3.event.transform);
+    g.attr('transform', d3.event.transform.translate(700, 300).scale(0.2));
   });
   // render graph
   resetCanvas();
@@ -262,7 +265,7 @@ reload_data = function() {
       showDetails(d);
     }).on('mouseout', function(d) {
       // exitHighlight()
-      hideDetails();
+      // hideDetails();
     });
     link.exit().remove();
     // node circle
@@ -273,7 +276,7 @@ reload_data = function() {
       if (d.hasOwnProperty('size')) {
         return d.size;
       } else {
-        return 6;
+        return 20;//6
       }
     }).style('fill', function(d) {
       return nodeColor(d);
@@ -284,7 +287,7 @@ reload_data = function() {
       showDetails(d);
     }).on('mouseout', function(d) {
       exitHighlight();
-      hideDetails();
+      // hideDetails();
     }).on('click', function(d) {
       d3.event.stopPropagation();
       if (!d3.event.defaultPrevented) { // distinguishing from click from dragging
@@ -315,7 +318,7 @@ reload_data = function() {
       showDetails(d);
     }).on('mouseout', function(d) {
       exitHighlight();
-      hideDetails();
+      // hideDetails();
     }).on('click', function(d) {
       d3.event.stopPropagation();
       if (!d3.event.defaultPrevented) { // distinguishing from click from dragging
@@ -399,17 +402,30 @@ nodeColor = function(d) {
   };
 };
 
+//tooltip
 showDetails = function(d) {
-  var tt;
+  var tt, i, j;
+  i = d.x;
+  j=d.y;
   tt = $('#tooltip');
-  tt.html(JSON.stringify(d, ['id', 'label', 'group', 'color', 'size', 'source', 'target', 'value', 'year', 'duration', 'plateform', 'continent'], 2));
+  tt.html("Movie info: " + JSON.stringify(d, ['id', 'label', 'group', 'color', 'size', 'source', 'target', 'value', 'year', 'duration', 'plateform', 'continent'], 2));
   // tt.html JSON.stringify(d, null, 2)
-  if (d.hasOwnProperty('x')) {
-    tt.css('left', 10 + d.x);
-    tt.css('top', 10 + d.y);
-  } else {
-    tt.css('left', 10 + (d.source.x + d.target.x) / 2);
-    tt.css('top', 10 + (d.source.y + d.target.y) / 2);
+  if (d.hasOwnProperty('x')) { //node
+    // if(d.x < 0) {
+    //   i = -d.x;
+    // }
+    // if(d.y < 0) {
+    //   j = -d.y
+    // }
+    tt.css('left', 50);
+    tt.css('top', 150);
+    // tt.css('left', 10 + d.x);
+    // tt.css('top', 10 + d.y);
+  } else { //link
+    // tt.css('left', 10 + (d.source.x + d.target.x) / 2);
+    // tt.css('top', 10 + (d.source.y + d.target.y) / 2);
+    tt.css('left', 50);
+    tt.css('top', 150);
   };
   if (isTooltipOn()) {
     tt.removeClass('d-none');
@@ -437,6 +453,7 @@ initUI = function() {
     };
     $(this).blur();
   });
+  //search bar
   $('#quick-search').on('keyup search click', function(event) {
     var qsVal;
     if (selected) {
@@ -445,8 +462,10 @@ initUI = function() {
     qsVal = $('#quick-search').val();
     if (qsVal.length > 0) {
       setHighlightByStr(qsVal);
+      g.attr('transform', d3.zoomTransform(qsVal));
     } else {
       exitHighlight();
+      svg.call(zoom.transform, d3.zoomIdentity);
     }
   });
   $('.modal').on('shown.bs.modal', function(e) {
@@ -455,7 +474,7 @@ initUI = function() {
     });
   });
 };
-
+//filters
 $('input[type=checkbox]').change(function() {
   if (this.checked) {
     if (['Africa', 'Asia', 'Europe', 'North America', 'South America'].indexOf(this.id) != -1) {
@@ -490,7 +509,13 @@ isLinkOn = function() {
 };
 
 isTooltipOn = function() {
-  return $('#toggle-tooltip').text().split(': ')[1] === 'On';
+  if($('#toggle-tooltip').text().split(': ')[1] === 'On'){
+    return $('#toggle-tooltip').text().split(': ')[1] === 'On';
+  }
+  else {
+    hideDetails();
+    return $('#toggle-tooltip').text().split(': ')[1] === 'On';
+  }
 };
 
 // hover & quick search highlight functions
@@ -542,6 +567,7 @@ isEdgeSelected = function() {
   return selected && selected.hasOwnProperty('source');
 };
 
+//reset button
 $('input[id=reset]').change(function() {
   if (this.checked) {
     if (this.checked == true) {
