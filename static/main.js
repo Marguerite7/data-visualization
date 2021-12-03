@@ -17,6 +17,7 @@
 // global variables
 // [svg, svgNodes, svgLinks, svgTexts, width, height, color, nodes, links, force, node, link, text, zoom, drag, graph] = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc28, getTransform, graph, height, hideDetails, init, initUI, reload_data, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, slider_year_link, slider_year_node, slider_duration_link, slider_duration_node, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, resetAll, selected, setHighlightByNode, setHighlightByStr, setHighlightbySlider, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, yearSlider, durationSlider, filters_continent, filters_plateform, min_year, max_year, max_duration;
+var genreNb, genreName;
 
 svg = null;
 
@@ -71,6 +72,8 @@ duration = 180;
 gc28 = '#3366cc #dc3912 #ff9900 #6633cc #e67300 #8b0707 #651067 #4e05f7 #5574a6 #3b3eac #485c47 #485c47 #05f5f5 #485c47 #485c47 #109618 #990099 #0099c6 #dd4477 #66aa00 #b82e2e #316395 #edd607 #329262 #f505e1 #994499 #22aa99 #aaaa11'.split(' ');
 
 url = '/api';
+
+genreNb = {"1": "Biography", "10402": "Music", "10749": "Romance", "10751": "Family", "10752": "War", "10767": "News", "12": "Adventure", "14": "Fantasy", "16": "Animation", "18": "Drama", "2": "Film noir", "27": "Horror", "28": "Action", "3": 'Game show', "35": "Comedy", "36": "History", "37": "Western", "4": "Musical", "5": "Sport", "53": "Thriller", "6": "Short", "7": "Adult", "80": "Crime", "878": "Science fiction", "9648": "Mystery", "99": "Documentary"}
 
 // initialize ui
 init = function() {
@@ -405,26 +408,18 @@ nodeColor = function(d) {
 
 //tooltip
 showDetails = function(d) {
-  var tt, i, j;
-  i = d.x;
-  j=d.y;
+  var tt;
   tt = $('#tooltip');
-  tt.html("Movie info: " + JSON.stringify(d, ['id', 'label', 'group', 'color', 'size', 'source', 'target', 'value', 'year', 'duration', 'plateform', 'continent'], 2));
+  genreName = genreNb[d.group]
+  // tt.html("Movie info: " + JSON.stringify(d, ['label', 'group', 'source', 'target', 'value', 'year', 'duration', 'plateform', 'continent'], 2));
+  tt.html("Movie info: \n Title: " + JSON.stringify(d.label).replace(/"/g, '') + '\n Genre: ' + JSON.stringify(genreName).replace(/"/g, '') + '\n Year: '
+  + JSON.stringify(d.year).replace(/"/g, '') + '\n Duration: ' + JSON.stringify(d.duration).replace(/"/g, '') + ' min \n Platform: '
+  + JSON.stringify(d.plateform).replace(/"/g, '').replace('[', '').replace(']', '').replace(/'/g, '') + '\n Continent: ' + JSON.stringify(d.continent).replace(/"/g, ''))
   // tt.html JSON.stringify(d, null, 2)
   if (d.hasOwnProperty('x')) { //node
-    // if(d.x < 0) {
-    //   i = -d.x;
-    // }
-    // if(d.y < 0) {
-    //   j = -d.y
-    // }
     tt.css('left', 50);
     tt.css('top', 150);
-    // tt.css('left', 10 + d.x);
-    // tt.css('top', 10 + d.y);
   } else { //link
-    // tt.css('left', 10 + (d.source.x + d.target.x) / 2);
-    // tt.css('top', 10 + (d.source.y + d.target.y) / 2);
     tt.css('left', 50);
     tt.css('top', 150);
   };
@@ -464,6 +459,7 @@ initUI = function() {
     if (qsVal.length > 0) {
       setHighlightByStr(qsVal);
       g.attr('transform', d3.zoomTransform(qsVal));
+      // setHighlightByNode(qsVal, true);
     } else {
       exitHighlight();
       svg.call(zoom.transform, d3.zoomIdentity);
