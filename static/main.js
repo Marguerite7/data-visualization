@@ -212,7 +212,7 @@ init = function() {
 reload_data = function() {
   color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]).range(gc28);
   drag = d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
-  zoom = d3.zoom().scaleExtent([.1, 10]).on('zoom', function() {
+  zoom = d3.zoom().scaleExtent([1, 8]).on('zoom', function() {
     g.attr('transform', d3.event.transform.translate(700, 300).scale(0.2));
   });
   // render graph
@@ -330,7 +330,7 @@ reload_data = function() {
       }
     });
     text.exit().remove();
-    setHighlightbySlider();
+    // setHighlightbySlider();
     svg.call(zoom.transform, d3.zoomIdentity);
     // drawGraph()
     return $('#spinner').hide();
@@ -634,8 +634,10 @@ resetAll = function() {
         this.text = this.text.split(': ')[0] + ': On';
       }
     });;
+    hideDetails();
+    svg.call(zoom.transform, d3.zoomIdentity);
+    // reload_data();
     $('#quick-search').val('');
-    reload_data();
   };
 };
 
