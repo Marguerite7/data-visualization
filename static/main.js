@@ -327,6 +327,7 @@ reload_data = function() {
       }
     });
     text.exit().remove();
+    setHighlightbySlider();
     svg.call(zoom.transform, d3.zoomIdentity);
     // drawGraph()
     return $('#spinner').hide();
@@ -570,12 +571,10 @@ isEdgeSelected = function() {
 //reset button
 $('input[id=reset]').change(function() {
   if (this.checked) {
-    if (this.checked == true) {
-      resetAll();
-      $(':checkbox').each(function() {
-        this.checked = false;
+    resetAll();
+    $(':checkbox').each(function() {
+      this.checked = false;
     });
-    };
   };
 });
 
@@ -586,7 +585,7 @@ yearSlider = function (slider) {
 };
 
 durationSlider = function (slider) {
-  max_duration = slider.value
+  max_duration = slider.value;
   setHighlightbySlider();
 };
 
