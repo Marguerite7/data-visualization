@@ -16,7 +16,7 @@
 
 // global variables
 // [svg, svgNodes, svgLinks, svgTexts, width, height, color, nodes, links, force, node, link, text, zoom, drag, graph] = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc28, getTransform, graph, height, hideDetails, init, initUI, reload_data, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, slider_year_link, slider_year_node, slider_duration_link, slider_duration_node, link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, resetAll, selected, setHighlightByNode, setHighlightByStr, setHighlightbySlider, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, yearSlider, durationSlider, filters_continent, filters_plateform, min_year, max_year, max_duration;
+var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc28, getTransform, graph, height, hideDetails, init, initUI, reload_data, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, slider_year_link, slider_year_node, slider_duration_link, slider_rating_link, slider_duration_node, slider_rating_node,link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, resetAll, selected, setHighlightByNode, setHighlightByStr, setHighlightbySlider, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, yearSlider, durationSlider, rating_Slider, filters_continent, filters_plateform, min_year, max_year, max_duration, min_rating;
 var genreNb, genreName;
 
 svg = null;
@@ -67,13 +67,17 @@ min_year = 1980;
 
 max_year = 2021;
 
-duration = 180;
+max_duration = 180;
+
+min_rating = 0;
+
+
 
 gc28 = '#3366cc #dc3912 #ff9900 #6633cc #e67300 #8b0707 #651067 #4e05f7 #5574a6 #3b3eac #485c47 #485c47 #05f5f5 #485c47 #485c47 #109618 #990099 #0099c6 #dd4477 #66aa00 #b82e2e #316395 #edd607 #329262 #f505e1 #994499 #22aa99 #aaaa11'.split(' ');
 
 url = '/api';
 
-genreNb = {"1": "Biography", "10402": "Music", "10749": "Romance", "10751": "Family", "10752": "War", "10767": "News", "12": "Adventure", "14": "Fantasy", "16": "Animation", "18": "Drama", "2": "Film noir", "27": "Horror", "28": "Action", "3": 'Game show', "35": "Comedy", "36": "History", "37": "Western", "4": "Musical", "5": "Sport", "53": "Thriller", "6": "Short", "7": "Adult", "80": "Crime", "878": "Science fiction", "9648": "Mystery", "99": "Documentary"}
+genreNb = {"1": "Biography", "10402": "Music", "10749": "Romance", "10751": "Family", "10752": "War", "10767": "News", "12": "Adventure", "14": "Fantasy", "16": "Animation", "18": "Drama", "2": "Film noir", "27": "Horror", "28": "Action", "3": 'Game show', "35": "Comedy", "36": "History", "37": "Western", "4": "Musical", "5": "Sport", "53": "Thriller", "6": "Short", "7": "Adult", "80": "Crime", "878": "Science fiction", "9648": "Mystery", "99": "Documentary"};
 
 // initialize ui
 init = function() {
@@ -212,7 +216,7 @@ init = function() {
 reload_data = function() {
   color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]).range(gc28);
   drag = d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
-  zoom = d3.zoom().scaleExtent([1, 8]).on('zoom', function() {
+  zoom = d3.zoom().scaleExtent([.1, 8]).on('zoom', function() {
     g.attr('transform', d3.event.transform.translate(700, 300).scale(0.2));
   });
   // render graph
@@ -330,7 +334,7 @@ reload_data = function() {
       }
     });
     text.exit().remove();
-    // setHighlightbySlider();
+    setHighlightbySlider();
     svg.call(zoom.transform, d3.zoomIdentity);
     // drawGraph()
     return $('#spinner').hide();
@@ -410,7 +414,7 @@ nodeColor = function(d) {
 showDetails = function(d) {
   var tt;
   tt = $('#tooltip');
-  genreName = genreNb[d.group]
+  genreName = genreNb[d.group];
   // tt.html("Movie info: " + JSON.stringify(d, ['label', 'group', 'source', 'target', 'value', 'year', 'duration', 'plateform', 'continent'], 2));
   tt.html("Movie info: \n Title: " + JSON.stringify(d.label).replace(/"/g, '') + '\n Genre: ' + JSON.stringify(genreName).replace(/"/g, '') + '\n Year: '
   + JSON.stringify(d.year).replace(/"/g, '') + '\n Duration: ' + JSON.stringify(d.duration).replace(/"/g, '') + ' min \n Platform: '
@@ -443,7 +447,15 @@ initUI = function() {
       // $('.main-canvas .'+this.id.split('-')[1]).hide()
       this.text = this.text.split(': ')[0] + ': Off';
     } else {
-      g.selectAll('.' + this.id.split('-')[1]).classed('dim', false).classed('d-none', false);
+      if (this.id.split('-')[1] == 'link') {
+        g.selectAll('.' + this.id.split('-')[1]).classed('d-none', function(p) {
+          return !slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p);
+        });
+      } else {
+        g.selectAll('.' + this.id.split('-')[1]).classed('d-none', function(p) {
+          return !slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p);
+        });
+      };
       // $('.main-canvas .'+this.id.split('-')[1]).show()
       this.text = this.text.split(': ')[0] + ': On';
     };
@@ -556,6 +568,14 @@ slider_duration_node = function(p) {
   return p.duration <= max_duration;
 };
 
+slider_rating_link = function(p) {
+  return p.source.rating >= min_rating && p.target.rating >= min_rating;
+};
+
+slider_rating_node = function(p) {
+  return p.rating >= min_rating;
+};
+
 isNodeSelected = function() {
   return selected && !selected.hasOwnProperty('source');
 };
@@ -585,6 +605,11 @@ durationSlider = function (slider) {
   setHighlightbySlider();
 };
 
+ratingSlider = function (slider) {
+  min_rating = slider.value;
+  setHighlightbySlider();
+};
+
 // $('input[type=checkbox]').change(function() { // while you're at it listen for change rather than click, this is in case something else modifies the checkbox
 //   console.log("something is checked on the page");
 // });
@@ -593,15 +618,15 @@ setHighlightByNode = function(d, hover) {
   if (link !== null) {
     if (!dragging) {
       link.classed('dim', function(p) {
-        return !isEdgeOf(p, d) || (!slider_year_link(p) && !slider_duration_link(p));
+        return !isEdgeOf(p, d) || (!slider_year_link(p) && !slider_duration_link(p) && !slider_rating_link(p));
       });
       // .classed 'selected', (p) -> (not hover) and isEdgeSelected() and isSameEdge p,selected
       node.classed('dim', function(p) {
-        return !isNeighbor(p, d) || (!slider_year_node(p) && !slider_year_node(d) && !slider_duration_node(p) && !slider_duration_node(d));
+        return !isNeighbor(p, d) || (!slider_year_node(p) && !slider_year_node(d) && !slider_duration_node(p) && !slider_duration_node(d) && !slider_rating_node(p) && !slider_rating_node(d));
       });
       // .classed 'selected', (p) -> (not hover) and isNodeSelected() and isSameNode p,selected
       text.classed('dim', function(p) {
-        return !isNeighbor(p, d) || (!slider_year_node(p) && !slider_year_node(d) && !slider_duration_node(p) && !slider_duration_node(d));
+        return !isNeighbor(p, d) || (!slider_year_node(p) && !slider_year_node(d) && !slider_duration_node(p) && !slider_duration_node(d) && !slider_rating_node(p) && !slider_rating_node(d));
       });
     };
   };
@@ -610,13 +635,13 @@ setHighlightByNode = function(d, hover) {
 setHighlightbySlider = function() {
   if (link !== null) {
     link.classed('d-none', function(p) {
-      return p.source.duration > max_duration || p.target.duration > max_duration || p.source.year < min_year || p.source.year > max_year || p.target.year < min_year || p.target.year > max_year || !isLinkOn();
+      return p.source.duration > max_duration || p.target.duration > max_duration || p.source.year < min_year || p.source.year > max_year || p.target.year < min_year || p.target.year > max_year || p.source.rating < min_rating || p.target.rating < min_rating || !isLinkOn();
     });
     node.classed('d-none', function(p) {
-      return p.duration > max_duration || p.year < min_year || p.year > max_year;
+      return p.duration > max_duration || p.year < min_year || p.year > max_year || p.rating < min_rating;
     });
     text.classed('d-none', function(p) {
-      return p.duration > max_duration || p.year < min_year || p.year > max_year || !isTextOn();
+      return p.duration > max_duration || p.year < min_year || p.year > max_year || p.rating < min_rating || !isTextOn();
     });
   };
 };
@@ -627,13 +652,14 @@ resetAll = function() {
     max_duration = 180;
     min_year = 1980;
     max_year = 2021;
+    min_rating = 0;
     filters_continent = [];
     filters_plateform = [];
     $('.nav-toggle').each(function() {
       if (this.text.split(': ')[1] === 'Off') {
         this.text = this.text.split(': ')[0] + ': On';
       }
-    });;
+    });
     hideDetails();
     svg.call(zoom.transform, d3.zoomIdentity);
     // reload_data();
@@ -660,15 +686,15 @@ setHighlightByStr = function(s) {
   // console.log s.toLowerCase()
   if (link !== null) {
     link.classed('dim', true).classed('d-none', function(p) {
-      return !isLinkOn() && (!slider_year_link(p) || !slider_duration_link(p));
+      return !isLinkOn() && (!slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p));
     });
     // .classed 'selected', (p) -> isEdgeSelected() and isSameEdge p,selected
     node.classed('dim', function(p) {
-      return !isPartOf(p, s) && (!slider_year_node(p)  || !slider_duration_node(p));
+      return !isPartOf(p, s) && (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
     });
     // .classed 'selected', (p) -> isNodeSelected() and isSameNode p,selected
     text.classed('dim', function(p) {
-      return !isPartOf(p, s) && (!slider_year_node(p) || !slider_duration_node(p));
+      return !isPartOf(p, s) && (!slider_year_node(p) || !slider_duration_node(p) || !slider_rating_node(p));
     })
   };
 };
@@ -687,15 +713,15 @@ exitHighlight = function() {
           setHighlightByStr($('#quick-search').val());
         } else {
           link.classed('dim', function(p) {
-            return !slider_year_link(p) && !slider_duration_link(p);
+            return !slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p);
           }).classed('d-none', function(p) {
-            return !isLinkOn() || (!slider_year_link(p) && !slider_duration_link(p));
+            return !isLinkOn() || (!slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p));
           }).classed('selected', false);
           node.classed('dim', false).classed('selected', false);
           text.classed('dim', function(p) {
-            return !slider_year_node(p) && !slider_duration_node(p);
+            return !slider_year_node(p) || !slider_duration_node(p) || !slider_rating_node(p);
           }).classed('d-none', function(p) {
-            return !isTextOn() || (!slider_year_node(p) && !slider_duration_node(p));
+            return !isTextOn() || (!slider_year_node(p) || !slider_duration_node(p) || !slider_rating_node(p));
           });
         };
       };
