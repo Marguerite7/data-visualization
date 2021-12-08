@@ -474,7 +474,7 @@ initUI = function() {
       // setHighlightByNode(qsVal, true);
     } else {
       exitHighlight();
-      svg.call(zoom.transform, d3.zoomIdentity);
+      // svg.call(zoom.transform, d3.zoomIdentity);
     }
   });
   
@@ -697,19 +697,12 @@ setHighlightByStr = function(s) {
     node.classed('d-none', function(p) {
       return !isPartOf(p, s) && (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
     }).classed('dim', function(p) {
-      if (!isPartOf(p, s)) {
-        node.classed('d-none', function(d) {
-          return !isNeighbor(p, d) || (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
-        })
-      }
-      else {
-        return false
-      }
+      return !isPartOf(p, s) || !isNeighbor(p, d) || (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
     });
     // .classed 'selected', (p) -> isNodeSelected() and isSameNode p,selected
     text.classed('dim', function(p) {
       return !isPartOf(p, s) && (!slider_year_node(p) || !slider_duration_node(p) || !slider_rating_node(p));
-    })
+    });
   };
 };
 
