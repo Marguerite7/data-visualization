@@ -87,7 +87,7 @@ init = function() {
   color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]).range(gc28);
   drag = d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
   zoom = d3.zoom().scaleExtent([.1, 8]).on('zoom', function() {
-    g.attr('transform', d3.event.transform.translate(700, 300).scale(0.1));
+    g.attr('transform', d3.event.transform.translate(800, 300).scale(0.1));
   });
   // render graph
   resetCanvas();
@@ -217,7 +217,7 @@ reload_data = function() {
   color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]).range(gc28);
   drag = d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
   zoom = d3.zoom().scaleExtent([.1, 8]).on('zoom', function() {
-    g.attr('transform', d3.event.transform.translate(700, 300).scale(0.1));
+    g.attr('transform', d3.event.transform.translate(800, 300).scale(0.1));
   });
   // render graph
   resetCanvas();
@@ -412,9 +412,11 @@ nodeColor = function(d) {
 
 //tooltip
 showDetails = function(d) {
-  var tt;
+  var tt, a;
+  a = $('#poster');
   tt = $('#tooltip');
   genreName = genreNb[d.group];
+  document.getElementById("poster").src= JSON.stringify(d.link).replace(/"/g, '');
   // tt.html("Movie info: " + JSON.stringify(d, ['label', 'group', 'source', 'target', 'value', 'year', 'duration', 'plateform', 'continent'], 2));
   tt.html("Movie info: \n Title: " + JSON.stringify(d.label).replace(/"/g, '') + '\n Genre: ' + JSON.stringify(genreName).replace(/"/g, '') + '\n Year: '
   + JSON.stringify(d.year).replace(/"/g, '') + '\n Duration: ' + JSON.stringify(d.duration).replace(/"/g, '') + ' min \n Platform: '
@@ -423,17 +425,23 @@ showDetails = function(d) {
   if (d.hasOwnProperty('x')) { //node
     tt.css('left', 50);
     tt.css('top', 150);
-  } else { //link
+    a.css('right', 50);
+    a.css('top', 150);
+    } else { //link
     tt.css('left', 50);
     tt.css('top', 150);
+    a.css('right', 50);
+    a.css('top', 150);
   };
   if (isTooltipOn()) {
     tt.removeClass('d-none');
+    a.removeClass('d-none');
   };
 };
 
 hideDetails = function(d) {
   $('#tooltip').addClass('d-none');
+  $('#poster').addClass('d-none');
 };
 
 // init all tooltips
