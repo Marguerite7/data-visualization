@@ -16,7 +16,7 @@
 
 // global variables
 // [svg, svgNodes, svgLinks, svgTexts, width, height, color, nodes, links, force, node, link, text, zoom, drag, graph] = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc28, getTransform, graph, height, hideDetails, init, initUI, reload_data, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, slider_year_link, slider_year_node, slider_duration_link, slider_rating_link, slider_duration_node, slider_rating_node,link, links, nborsdic, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, resetAll, selected, setHighlightByNode, setHighlightByStr, setHighlightbySlider, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, yearSlider, durationSlider, rating_Slider, filters_continent, filters_plateform, min_year, max_year, max_duration, min_rating;
+var centerToXY, color, drag, dragended, dragged, dragging, dragstarted, exitHighlight, g, gc28, getTransform, graph, height, hideDetails, init, initUI, reload_data, isEdgeOf, isEdgeSelected, isLinkOn, isNeighbor, isNodeSelected, isPartOf, isSameEdge, isSameNode, isTextOn, isTooltipOn, slider_year_link, slider_year_node, slider_duration_link, slider_rating_link, slider_duration_node, slider_rating_node,link, links, nborsdic, str_nbor, node, nodeColor, nodes, resetCanvas, resetSelected, resetSize, resetAll, selected, setHighlightByNode, setHighlightByStr, setHighlightbySlider, showDetails, simulation, svg, svgLinks, svgNodes, svgTexts, text, tick, url, width, zoom, yearSlider, durationSlider, rating_Slider, filters_continent, filters_plateform, min_year, max_year, max_duration, min_rating;
 var genreNb, genreName;
 
 svg = null;
@@ -58,6 +58,8 @@ selected = null;
 dragging = null;
 
 nborsdic = null;
+
+str_nbor = null;
 
 filters_continent = [];
 
@@ -697,15 +699,26 @@ resetAll = function() {
 setHighlightByStr = function(s) {
   // console.log s.toLowerCase()
   if (link !== null) {
+    str_nbor = [];
     link.classed('d-none', function(p) {
+      if (slider_year_link(p) && slider_duration_link(p) && slider_rating_link(p) && (isPartOf(p.source, s) || isPartOf(p.target, s))) {
+        str_nbor.push(p.source.id);
+        str_nbor.push(p.target.id);
+      };
+      return !isLinkOn() || (!slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p)) || (!isPartOf(p.source, s) && !isPartOf(p.target, s));
+    }).classed('dim', function(p) {
       return !isLinkOn() || (!slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p)) || !isPartOf(p.source, s) || !isPartOf(p.target, s);
     });
     // .classed 'selected', (p) -> isEdgeSelected() and isSameEdge p,selected
     node.classed('d-none', function(p) {
+      return !(str_nbor.indexOf(p.id) >= 0);
+    }).classed('dim', function(p) {
       return !isPartOf(p, s) || (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
-    })
+    });
     // .classed 'selected', (p) -> isNodeSelected() and isSameNode p,selected
     text.classed('d-none', function(p) {
+      return !(str_nbor.indexOf(p.id) >= 0);
+    }).classed('dim', function(p) {
       return !isPartOf(p, s) || (!slider_year_node(p) || !slider_duration_node(p) || !slider_rating_node(p));
     });
   };
