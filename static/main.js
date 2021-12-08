@@ -478,7 +478,7 @@ initUI = function() {
     qsVal = $('#quick-search').val();
     if (qsVal.length > 0) {
       setHighlightByStr(qsVal);
-      g.attr('transform', d3.zoomTransform(qsVal));
+      // g.attr('transform', d3.zoomTransform(qsVal));
       // setHighlightByNode(qsVal, true);
     } else {
       exitHighlight();
@@ -543,10 +543,9 @@ isNeighbor = function(p, d) {
 };
 
 isPartOf = function(p, s) {
-  var flagId, flagLabel;
-  flagId = p.id.toString().toLowerCase().indexOf(s.toLowerCase()) >= 0;
-  flagLabel = p.hasOwnProperty('label') ? p.label.toString().toLowerCase().indexOf(s.toLowerCase()) >= 0 : false;
-  return flagId || flagLabel;
+  var flagLabel;
+  flagLabel = p.label.toString().toLowerCase().indexOf(s.toLowerCase()) >= 0;
+  return flagLabel;
 };
 
 // check if s [string] is part of p [node] id or label
@@ -698,18 +697,16 @@ resetAll = function() {
 setHighlightByStr = function(s) {
   // console.log s.toLowerCase()
   if (link !== null) {
-    link.classed('dim', true).classed('d-none', function(p) {
-      return !isLinkOn() && (!slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p));
+    link.classed('d-none', function(p) {
+      return !isLinkOn() || (!slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p)) || !isPartOf(p.source, s) || !isPartOf(p.target, s);
     });
     // .classed 'selected', (p) -> isEdgeSelected() and isSameEdge p,selected
     node.classed('d-none', function(p) {
-      return !isPartOf(p, s) && (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
-    }).classed('dim', function(p) {
-      return !isPartOf(p, s) || !isNeighbor(p, d) || (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
-    });
+      return !isPartOf(p, s) || (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
+    })
     // .classed 'selected', (p) -> isNodeSelected() and isSameNode p,selected
-    text.classed('dim', function(p) {
-      return !isPartOf(p, s) && (!slider_year_node(p) || !slider_duration_node(p) || !slider_rating_node(p));
+    text.classed('d-none', function(p) {
+      return !isPartOf(p, s) || (!slider_year_node(p) || !slider_duration_node(p) || !slider_rating_node(p));
     });
   };
 };
@@ -725,6 +722,17 @@ exitHighlight = function() {
         };
       } else {
         if ($('#quick-search').val().length > 0) {
+          link.classed('dim', function(p) {
+            return !slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p);
+          }).classed('d-none', function(p) {
+            return !isLinkOn() || (!slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p));
+          }).classed('selected', false);
+          node.classed('dim', false).classed('selected', false);
+          text.classed('dim', function(p) {
+            return !slider_year_node(p) || !slider_duration_node(p) || !slider_rating_node(p);
+          }).classed('d-none', function(p) {
+            return !isTextOn() || (!slider_year_node(p) || !slider_duration_node(p) || !slider_rating_node(p));
+          });
           setHighlightByStr($('#quick-search').val());
         } else {
           link.classed('dim', function(p) {
