@@ -246,7 +246,7 @@ svg.main-canvas .node {
   stroke-opacity: 0.5;
 }
 svg.main-canvas .node.dim {
-  fill-opacity: 0;
+  fill-opacity: 0.05;
 }
 svg.main-canvas .node.selected {
   stroke-width: 10;
@@ -256,7 +256,7 @@ svg.main-canvas .link {
   stroke-opacity: 0.5;
 }
 svg.main-canvas .link.dim {
-  stroke-opacity: 0;
+  stroke-opacity: 0.05;
 }
 svg.main-canvas .link.selected {
   stroke-opacity: 1;
@@ -266,5 +266,5 @@ svg.main-canvas .text {
   fill-opacity: 0.8;
 }
 svg.main-canvas .text.dim {
-  fill-opacity: 0;
+  fill-opacity: 0.05;
 }

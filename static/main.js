@@ -86,8 +86,8 @@ init = function() {
   initUI();
   color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]).range(gc28);
   drag = d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
-  zoom = d3.zoom().scaleExtent([1, 8]).on('zoom', function() {
-    g.attr('transform', d3.event.transform.translate(700, 300).scale(0.2));
+  zoom = d3.zoom().scaleExtent([.1, 8]).on('zoom', function() {
+    g.attr('transform', d3.event.transform.translate(700, 300).scale(0.1));
   });
   // render graph
   resetCanvas();
@@ -217,7 +217,7 @@ reload_data = function() {
   color = d3.scaleOrdinal().domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]).range(gc28);
   drag = d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
   zoom = d3.zoom().scaleExtent([.1, 8]).on('zoom', function() {
-    g.attr('transform', d3.event.transform.translate(700, 300).scale(0.2));
+    g.attr('transform', d3.event.transform.translate(700, 300).scale(0.1));
   });
   // render graph
   resetCanvas();
@@ -477,12 +477,14 @@ initUI = function() {
       svg.call(zoom.transform, d3.zoomIdentity);
     }
   });
+  
   $('.modal').on('shown.bs.modal', function(e) {
     $('.nav-link').one('focus', function(e) {
       return $(this).blur();
     });
   });
 };
+
 //filters
 $('input[type=checkbox]').change(function() {
   if (this.checked) {
