@@ -334,8 +334,8 @@ reload_data = function() {
       }
     });
     text.exit().remove();
-    setHighlightbySlider();
     svg.call(zoom.transform, d3.zoomIdentity);
+    setHighlightbySlider();
     // drawGraph()
     return $('#spinner').hide();
   });
@@ -655,6 +655,9 @@ resetAll = function() {
     min_year = 1980;
     max_year = 2021;
     min_rating = 0;
+    $( "#year-movie" ).slider({values: [ 1980, 2021 ]});
+    $( "#duration-movie" ).slider({value: 180});
+    $( "#rating-movie" ).slider({value: 0});
     filters_continent = [];
     filters_plateform = [];
     $('.nav-toggle').each(function() {
@@ -691,8 +694,17 @@ setHighlightByStr = function(s) {
       return !isLinkOn() && (!slider_year_link(p) || !slider_duration_link(p) || !slider_rating_link(p));
     });
     // .classed 'selected', (p) -> isEdgeSelected() and isSameEdge p,selected
-    node.classed('dim', function(p) {
+    node.classed('d-none', function(p) {
       return !isPartOf(p, s) && (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
+    }).classed('dim', function(p) {
+      if (!isPartOf(p, s)) {
+        node.classed('d-none', function(d) {
+          return !isNeighbor(p, d) || (!slider_year_node(p)  || !slider_duration_node(p) || !slider_rating_node(p));
+        })
+      }
+      else {
+        return false
+      }
     });
     // .classed 'selected', (p) -> isNodeSelected() and isSameNode p,selected
     text.classed('dim', function(p) {
