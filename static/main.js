@@ -182,7 +182,7 @@ init = function() {
     // .attr 'dx', (d) -> labelOffset + nodeSize d
     }).enter().append('text').attr('class', 'text').attr('dx', function(d) {
       if (d.hasOwnProperty('size')) {
-        return d.size + 4;
+        return d.size/2 + 20;
       } else {
         return 10;
       }
@@ -310,7 +310,7 @@ reload_data = function() {
     // .attr 'dx', (d) -> labelOffset + nodeSize d
     }).enter().append('text').attr('class', 'text').attr('dx', function(d) {
       if (d.hasOwnProperty('size')) {
-        return d.size + 4;
+        return d.size/2 + 20;
       } else {
         return 10;
       }
