@@ -5,6 +5,7 @@ The whole project is available on Github at: https://github.com/Marguerite7/data
 ## Goal of the project
 This project aims to provide a smooth and intuitive interface for users that need a movie recommendation system
 or just want to learn more about their favorite movies and discover new ones.
+Find the project presentation at: https://docs.google.com/presentation/d/1vgSazZwg6h2EzWk-AbI_2P6s1B5YyajMf9TWLLiMuHQ/edit?usp=sharing
 
 ## Rendered interface
 - Movie search
