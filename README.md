@@ -31,9 +31,10 @@ Definition of the API to get the data from the "Data" folder and rendering of th
 
 ## Launching the website locally
 In a terminal opened to the proper path (project folder "data-visualization"), run:
-set FLASK_ENV = environnement
-set FLASK_APP = app
-flask run
+- set FLASK_ENV = environnement
+- set FLASK_APP = app
+- flask run
+
 And then go the mentioned local ip address.
 
 ## Launching the website on the Internet
